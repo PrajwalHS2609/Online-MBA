@@ -10,8 +10,8 @@
   justify-content: center;
   align-items: center;
 }
-.programCourse-head > h2{
-    font-size: 40px;
+.programCourse-head > h2 {
+  font-size: 40px;
 }
 .programCourse-head > h2 > span {
   color: var(--accentColor1);
@@ -58,6 +58,9 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
+}
+.programCourse-content > h4 {
+  color: var(--customColor1);
 }
 .programCourse-duration {
   display: flex;

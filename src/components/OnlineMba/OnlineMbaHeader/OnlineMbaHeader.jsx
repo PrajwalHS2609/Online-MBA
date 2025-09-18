@@ -24,7 +24,9 @@ const OnlineMbaHeader = () => {
             industry-ready, and unlock global opportunities.
           </p>
           <div className="onlineHeader-btnContainer">
-            <button onClick={handlePop}>Enroll Now</button>
+            <button className="button-87" role="button" onClick={handlePop}>
+              Enroll Now
+            </button>{" "}
             <a href="">
               {" "}
               <button>Contact Us</button>

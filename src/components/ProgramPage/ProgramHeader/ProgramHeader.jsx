@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./ProgramHeader.css";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import nirf from "@/Images/Approved/NIRF.png";
 import qaa from "@/Images/Approved/QAA.png";
 import ugc from "@/Images/Approved/UGC.png";
 import wes from "@/Images/Approved/WES.png";
-import banner from "@/Images/Banner 2.png"
+import banner from "@/Images/Banner 2.png";
 
 const ProgramHeader = () => {
   const handlePop = () => {
@@ -16,10 +16,7 @@ const ProgramHeader = () => {
   };
   return (
     <div className="programHeader-container">
-        <Image
-          src={banner}
-          alt="banner"
-        />
+      <Image src={banner} alt="banner" />
       <div className="programHeader-cover">
         <div className="programHeader-content">
           <h6> Top-Ranked Online Degree & Certification Programs</h6>
@@ -29,8 +26,10 @@ const ProgramHeader = () => {
             as credible as Campus-Based Learning.
           </p>
           <div className="programHeader-btnContainer">
-            <button onClick={handlePop}>Enroll Now</button>
-            <a href="">
+            <button className="button-87" role="button" onClick={handlePop}>
+              Enroll Now{" "}
+            </button>
+            <a href="tel:">
               {" "}
               <button>Contact Us</button>
             </a>

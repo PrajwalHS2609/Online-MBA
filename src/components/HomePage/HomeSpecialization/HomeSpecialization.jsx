@@ -2,6 +2,30 @@
 import React from "react";
 import "./HomeSpecialization.css";
 import img from "@/Images/Untitled design (11).png";
+
+import generalManagement from "@/Images/mbaSpecialization/General Management.png";
+import finance from "@/Images/mbaSpecialization/Finance.png";
+import marketing from "@/Images/mbaSpecialization/Marketing.png";
+import hrManagement from "@/Images/mbaSpecialization/HR.png";
+import operation from "@/Images/mbaSpecialization/Operations.png";
+import it from "@/Images/mbaSpecialization/IT.png";
+import supplyChain from "@/Images/mbaSpecialization/Supply Chain Management.png";
+import dataAnalytics from "@/Images/mbaSpecialization/Data Analytics.png";
+import businessAnalytics from "@/Images/mbaSpecialization/Business Analytics.png";
+import hospitalityManagement from "@/Images/mbaSpecialization/Hospitality Management.png";
+import intBusiness from "@/Images/mbaSpecialization/International Business.png";
+import projectManagement from "@/Images/mbaSpecialization/Project Management.png";
+import logistic from "@/Images/mbaSpecialization/Logistics & Supply Chain.png";
+import intFinance from "@/Images/mbaSpecialization/International Finance.png";
+import retailManagement from "@/Images/mbaSpecialization/Retail Management.png";
+import iTFitech from "@/Images/mbaSpecialization/IT & Fintech.png";
+import fitechManagement from "@/Images/mbaSpecialization/Fintech.png";
+
+import dataScience from "@/Images/mbaSpecialization/Data Science.png";
+import healthCare from "@/Images/mbaSpecialization/Healthcare.png";
+import banking from "@/Images/mbaSpecialization/Banking.png";
+import marketingHmr from "@/Images/mbaSpecialization/Marketing & HRM.png";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -14,52 +38,171 @@ const HomeSpecialization = () => {
   const serviceData = [
     {
       id: 1,
-      img: img,
-      serviceDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora eligendi cumque ea laudantium. Facilis asperiores corrupti, molestias cumque laborum ad ex in quod, sit praesentium ullam laboriosam nesciunt obcaecati.",
+      img: generalManagement,
       link: "/",
       serviceName: "MBA",
       para: "( General Management )",
     },
     {
       id: 2,
-      img:  img,
+      img: finance,
 
-      serviceDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora eligendi cumque ea laudantium. Facilis asperiores corrupti, molestias cumque laborum ad ex in quod, sit praesentium ullam laboriosam nesciunt obcaecati.",
       link: "/",
       serviceName: "MBA",
       para: "( Finance )",
     },
     {
       id: 3,
-      img:  img,
+      img: marketing,
 
-      serviceDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora eligendi cumque ea laudantium. Facilis asperiores corrupti, molestias cumque laborum ad ex in quod, sit praesentium ullam laboriosam nesciunt obcaecati.",
       link: "/",
       serviceName: "MBA",
       para: "( Marketing )",
     },
     {
       id: 4,
-      img:  img,
+      img: hrManagement,
 
-      serviceDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora eligendi cumque ea laudantium. Facilis asperiores corrupti, molestias cumque laborum ad ex in quod, sit praesentium ullam laboriosam nesciunt obcaecati.",
       link: "/",
       serviceName: "MBA",
       para: "( HR Management )",
     },
     {
       id: 5,
-      img:  img,
+      img: operation,
 
-      serviceDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae tempora eligendi cumque ea laudantium. Facilis asperiores corrupti, molestias cumque laborum ad ex in quod, sit praesentium ullam laboriosam nesciunt obcaecati.",
       link: "/",
       serviceName: "MBA",
       para: "( Operation )",
+    },
+    {
+      id: 6,
+      img: it,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Information Technology )",
+    },
+    {
+      id: 7,
+      img: supplyChain,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Supply Chain Management )",
+    },
+    {
+      id: 8,
+      img: dataAnalytics,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Data Analytics )",
+    },
+    {
+      id: 9,
+      img: businessAnalytics,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Business Analytics )",
+    },
+
+    {
+      id: 10,
+      img: hospitalityManagement,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Hospitality Management )",
+    },
+    {
+      id: 11,
+      img: intBusiness,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( International Business )",
+    },
+    {
+      id: 12,
+      img: projectManagement,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Project Management )",
+    },
+    {
+      id: 13,
+      img: logistic,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Logistic and Supply Chain )",
+    },
+    {
+      id: 14,
+      img: intFinance,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( International Finance )",
+    },
+    {
+      id: 15,
+      img: retailManagement,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Retail Management  )",
+    },
+    {
+      id: 16,
+      img: iTFitech,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( IT and Fintech )",
+    },
+    {
+      id: 17,
+      img: fitechManagement,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Fintech Management )",
+    },
+    {
+      id: 18,
+      img: dataScience,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Data Science and Analytics )",
+    },
+    {
+      id: 19,
+      img: healthCare,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Healthcare and Hospital )",
+    },
+    {
+      id: 20,
+      img: banking,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Banking and Finance )",
+    },
+    {
+      id: 21,
+      img: marketingHmr,
+
+      link: "/",
+      serviceName: "MBA",
+      para: "( Marketing and HRM )",
     },
   ];
   return (
@@ -111,14 +254,14 @@ const HomeSpecialization = () => {
               <SwiperSlide key={x.id}>
                 <div className="homeServiceMain-cardContainer" key={x.id}>
                   <Link href={x.link}>
-                    <div className="homeServiceMain-cardCover">
+                    {/* <div className="homeServiceMain-cardCover">
                       <div className="homeServiceMain-cardPara">
                         <h3>
                           {x.serviceName} {x.para}
                         </h3>
                         <p>{x.serviceDescription}</p>
                       </div>
-                    </div>
+                    </div> */}
                     <div className="homeServiceMain-cardImg">
                       <Image src={x.img} alt={x.serviceName} loading="lazy" />
                     </div>

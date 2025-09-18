@@ -8,7 +8,7 @@ import lpu from "@/Images/UniversitiesImg/lpu.jpg";
 import jain from "@/Images/UniversitiesImg/jain.jpg";
 import amity from "@/Images/UniversitiesImg/amity.jpg";
 import nims from "@/Images/UniversitiesImg/nims.jpg";
-
+import vit from "@/Images/UniversitiesImg/vit.png";
 const UniversitiesMarquee = () => {
   const university = [
     {
@@ -31,6 +31,7 @@ const UniversitiesMarquee = () => {
       link: "egypt-embassy-attestation-in-bangalore",
     },
     { id: 5, name: "NMIMS UNIVERSITY", img: nims, link: "" },
+    { id: 6, name: "VIT", img: vit, link: "" },
   ];
   return (
     <div className="homeUniversityMain-container">

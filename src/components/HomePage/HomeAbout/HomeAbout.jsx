@@ -1,5 +1,7 @@
 import React from "react";
 import "./HomeAbout.css";
+import homeAboutUs from "@/Images/homeAbtUs.jpeg"
+import Image from "next/image";
 const HomeAbout = () => {
   return (
     <div className="homeAbout-container">
@@ -30,9 +32,9 @@ const HomeAbout = () => {
           </p>
         </div>
         <div className="homeAbout-content">
-          <img
-            src="https://images.pexels.com/photos/8199625/pexels-photo-8199625.jpeg"
-            alt=""
+          <Image
+            src={homeAboutUs}
+            alt="homeAboutUs"
           />
         </div>
       </div>

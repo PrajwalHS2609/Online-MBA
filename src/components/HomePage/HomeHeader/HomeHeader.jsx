@@ -2,7 +2,7 @@
 import React from "react";
 import "./HomeHeader.css";
 import Image from "next/image";
-import banner from "@/Images/Banner 1.png"
+import banner from "@/Images/Banner 1.png";
 const HomeHeader = () => {
   const keyPoints = [
     { id: 1, content: "8000+ Students Trust for Unbiased Counselling" },
@@ -26,10 +26,7 @@ const HomeHeader = () => {
   return (
     <div className="homeHeader-container">
       <div className="homeHeader-wrapper">
-        <Image
-          src={banner}
-          alt="banner"
-        />
+        <Image src={banner} alt="banner" />
         <div className="homeHeader-cover">
           <div className="homeHeader-content">
             <h2>ONLINE MBA</h2>
@@ -40,7 +37,11 @@ const HomeHeader = () => {
               porro neque, optio, repudiandae, praesentium animi esse iste.
             </p>
             <div className="homeHeader-contact">
-              <button onClick={handlePop}>Enroll Now</button>
+              {/* <button onClick={handlePop}>Enroll Now</button> */}
+              <button className="button-87" role="button" onClick={handlePop}>
+                Speak to Advisor
+              </button>
+
               <a href="tel:1234567980">
                 <button>Contact Us</button>
               </a>
