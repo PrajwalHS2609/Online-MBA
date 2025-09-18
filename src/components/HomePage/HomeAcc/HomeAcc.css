@@ -1,0 +1,133 @@
+.homeAccMain-container {
+  /* border: solid red; */
+  padding: 30px;
+}
+.homeAcc-container {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.homeAccHead-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeAccHead-container > h2 {
+  font-size: 40px;
+}
+
+.homeAccHead-container > h2>span {
+  font-size: 40px;
+  color: var(--accentColor1);
+}
+.homeAcc-cardContainer {
+  /* border: solid; */
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 100%;
+  margin: 3rem;
+  padding: 20px;
+}
+.homeAcc-cardContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.homeAcc-cardCover {
+  /* border: solid green; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  top: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, 0),
+    rgba(0, 0, 0, 0.379)
+  );
+}
+.homeAcc-cardName {
+  /* border: solid red; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 2;
+  width: 100%;
+  height: 40px;
+  bottom: -20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 10px black;
+  color: var(--customColor1);
+  text-align: center;
+}
+.homeAcc-cardName > h3 > a {
+  color: var(--customColor1);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeGovernmentHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .homeGovernmentHead-container {
+    flex-direction: column;
+  }
+  .homeAcc-container {
+    /* border: solid blue; */
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .homeAcc-cardContainer {
+    /* border: solid; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .homeGovernmentHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .homeGovernmentHead-container {
+    flex-direction: column;
+  }
+  .homeAcc-container {
+    /* border: solid blue; */
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+  .homeAcc-cardContainer {
+    /* border: solid; */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin: 20px;
+  }
+}

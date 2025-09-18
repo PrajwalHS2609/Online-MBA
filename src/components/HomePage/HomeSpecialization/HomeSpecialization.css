@@ -1,0 +1,233 @@
+.homeService-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--customBg1);
+}
+
+.homeServiceHead-container > h2 {
+  font-size: 40px;
+}
+.homeServiceHead-container > h2 > span {
+  color: var(--accentColor1);
+}
+.homeServiceMain-container {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.mySwiper {
+  /* border: solid blue; */
+  width: 100%;
+  height: 600px;
+  padding: 20px;
+}
+.swiper-3d {
+  padding: 30px !important;
+}
+.homeServiceMain-content {
+  /* border: solid var(--customColor1); */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 0 10px grey;
+}
+.homeServiceMain-content > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.homeServiceMain-content > p {
+  font-size: 15px;
+}
+.homeServiceMain-content > a {
+  color: var(--customColor2);
+  text-decoration: none;
+  font-weight: 600;
+}
+.homeServiceMain-cardContainer {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(163, 163, 163);
+  overflow: hidden;
+  background-color: white;
+}
+.homeServiceMain-cardContainer > a {
+  /* border: solid; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.homeServiceMain-cardCover {
+  /* border: solid red; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-100%);
+  bottom: 0;
+  transition: 200ms ease-in-out;
+  background-color: #2a2a2aac;
+  opacity: 0;
+  z-index: 1;
+}
+.homeServiceMain-cardContainer:hover .homeServiceMain-cardCover {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.homeServiceMain-cardImg {
+  /* border: solid blue; */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeServiceMain-cardImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 400ms ease-in-out;
+}
+.homeServiceMain-cardHead {
+  /* border: solid brown; */
+  width: 80%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--customColor1);
+  bottom: 50px;
+  left: 0;
+  position: absolute;
+  background-color: var(--customColor1);
+  transition: 400ms ease-in-out;
+  overflow: hidden;
+  gap: 10px;
+}
+.homeServiceMain-cardHead > h4 {
+  /* border: solid red; */
+  font-size: 40px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--customColor2);
+}
+.homeServiceMain-cardHead > h3 {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+}
+.homeServiceMain-cardHead > h5 {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeServiceMain-cardHead > b {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeServiceMain-cardPara {
+  /* border: solid yellowgreen; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  padding: 20px;
+}
+.homeServiceMain-cardPara>h3{
+  color: white;
+}
+.homeServiceMain-cardContainer:hover .ourServicesCardHead {
+  color: var(--customColor2);
+}
+.homeServiceMain-cardContainer:hover .homeServiceMain-cardHead > img {
+  transform: scale(1.2);
+}
+.homeServiceMain-cardPara > p {
+  font-size: 20px;
+  line-height: 25px;
+  text-align: justify;
+  transition: 100ms ease-in-out;
+}
+.homeServiceMain-cardContainer:hover .homeServiceMain-cardPara > p {
+  color: white;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeServiceHead-container > h2::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .homeServiceMain-container {
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+  .swiper-3d {
+    padding: 10px !important;
+  }
+  .homeServiceMain-cardContainer {
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    overflow: hidden;
+  }
+}
