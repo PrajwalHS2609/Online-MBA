@@ -3,21 +3,28 @@
   height: 100px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 9999;
   background-color: white;
 }
+.logo-container {
+  padding: 20px;
+}
 .logo-container > h2 > span {
   color: var(--accentColor1);
+}
+.logo-container > a > img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
 }
 .menu-container {
   width: 70%;
   height: 100%;
   /* border: solid green; */
-
 }
 .menu-content {
   /* border: solid red; */

@@ -9,8 +9,14 @@ const HomeHeader = () => {
       content:
         "100% Approved Online & Distance Education Colleges & Universites   ",
     },
-    { id: 3, content: "GOVT APPROVED AND ISO CERTIFIED" },
-    { id: 4, content: "TRUSTED BY MORE THAN 30000+ CUSTOMERS" },
+    {
+      id: 3,
+      content: "100% Unbiased Experts Guidance by our Certified Counsellors",
+    },
+    {
+      id: 4,
+      content: "100% Complete Assistance Till you Complete your Degree",
+    },
   ];
   const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";

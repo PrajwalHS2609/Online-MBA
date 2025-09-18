@@ -3,8 +3,8 @@ import Navbar from "./../components/Navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from './../components/Footer/Footer';
-import PopupForm from './../components/PopupForm/PopupForm';
+import Footer from "./../components/Footer/Footer";
+import PopupForm from "./../components/PopupForm/PopupForm";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -12,6 +12,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" href="./favicon.png" />
+      </head>
       <body
         style={{
           display: "flex",
@@ -22,8 +25,8 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <PopupForm/>
-        <Footer/>
+        <PopupForm />
+        <Footer />
       </body>
     </html>
   );
