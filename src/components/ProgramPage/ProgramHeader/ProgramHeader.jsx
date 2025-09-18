@@ -8,6 +8,7 @@ import nirf from "@/Images/Approved/NIRF.png";
 import qaa from "@/Images/Approved/QAA.png";
 import ugc from "@/Images/Approved/UGC.png";
 import wes from "@/Images/Approved/WES.png";
+import banner from "@/Images/Banner 2.png"
 
 const ProgramHeader = () => {
   const handlePop = () => {
@@ -15,10 +16,10 @@ const ProgramHeader = () => {
   };
   return (
     <div className="programHeader-container">
-      <img
-        src="https://static.wixstatic.com/media/0d481a_acb4bf59e57e4423a23eb1c7e47a8cde~mv2.webp/v1/fill/w_1998,h_776,al_c,q_85,enc_avif,quality_auto/0d481a_acb4bf59e57e4423a23eb1c7e47a8cde~mv2.webp"
-        alt=""
-      />
+        <Image
+          src={banner}
+          alt="banner"
+        />
       <div className="programHeader-cover">
         <div className="programHeader-content">
           <h6> Top-Ranked Online Degree & Certification Programs</h6>

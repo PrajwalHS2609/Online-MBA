@@ -46,7 +46,7 @@
   font-weight: bold;
 }
 .programHeader-content > h2 {
-  color: var(--customColor1);
+  color: var(--customColor2);
   font-size: 50px;
 }
 .programHeader-content > p {

@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import "./HomeHeader.css";
+import Image from "next/image";
+import banner from "@/Images/Banner 1.png"
 const HomeHeader = () => {
   const keyPoints = [
     { id: 1, content: "8000+ Students Trust for Unbiased Counselling" },
@@ -24,9 +26,9 @@ const HomeHeader = () => {
   return (
     <div className="homeHeader-container">
       <div className="homeHeader-wrapper">
-        <img
-          src="https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?_gl=1*1cmpth1*_ga*MTkxOTg2NzIzMy4xNzM1Mjk3NTYx*_ga_8JE65Q40S6*czE3NTc5MjgyNTEkbzEwMCRnMSR0MTc1NzkyOTkwMyRqNDgkbDAkaDA."
-          alt=""
+        <Image
+          src={banner}
+          alt="banner"
         />
         <div className="homeHeader-cover">
           <div className="homeHeader-content">
