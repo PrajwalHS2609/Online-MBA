@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./UniversitiesMarquee.css";
 import Marquee from "react-fast-marquee";
@@ -33,6 +34,10 @@ const UniversitiesMarquee = () => {
     { id: 5, name: "NMIMS UNIVERSITY", img: nims, link: "" },
     { id: 6, name: "VIT", img: vit, link: "" },
   ];
+
+    const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   return (
     <div className="homeUniversityMain-container">
       <div className="homeUniversityHead-container">
@@ -52,7 +57,7 @@ const UniversitiesMarquee = () => {
                     <h3>{x.name}</h3>
                   </div>
                   <div className="homeUniversity-marqueeCoverContent">
-                    <button>Enroll Now</button>
+                    <button onClick={handlePop}>Enroll Now</button>
                     <button>Brochure</button>
                   </div>
                 </div>

@@ -3,20 +3,32 @@ import React from "react";
 import "./HomeHeader.css";
 import Image from "next/image";
 import banner from "@/Images/Banner 1.png";
+import { FaUserGraduate } from "react-icons/fa6";
+import { FaUniversity } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { PiMedalBold } from "react-icons/pi";
+
 const HomeHeader = () => {
   const keyPoints = [
-    { id: 1, content: "8000+ Students Trust for Unbiased Counselling" },
+    {
+      id: 1,
+      icons: FaUserGraduate,
+      content: "8000+ Students Trust for Unbiased Counselling",
+    },
     {
       id: 2,
+      icons: FaUniversity,
       content:
         "100% Approved Online & Distance Education Colleges & Universites   ",
     },
     {
       id: 3,
+      icons: PiMedalBold,
       content: "100% Unbiased Experts Guidance by our Certified Counsellors",
     },
     {
       id: 4,
+      icons: FaChalkboardTeacher,
       content: "100% Complete Assistance Till you Complete your Degree",
     },
   ];
@@ -51,7 +63,10 @@ const HomeHeader = () => {
             {keyPoints.map((x) => (
               <div className="header-keyContainer" key={x.id}>
                 <div className="header-keyIconContainer">
-                  {/* <Image src={x.icon} alt={x.content} /> */}
+                  <span className="">
+                    {" "}
+                    <x.icons className="header-keyIcons"/>
+                  </span>
                 </div>
                 <h6>{x.content}</h6>
               </div>
