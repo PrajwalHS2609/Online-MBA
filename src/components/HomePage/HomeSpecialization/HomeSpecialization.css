@@ -9,7 +9,13 @@
   padding: 20px;
   background-color: var(--customBg1);
 }
-
+.homeServiceHead-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .homeServiceHead-container > h2 {
   font-size: 40px;
 }
@@ -21,6 +27,11 @@
   width: 100%;
   height: 100%;
   padding: 10px;
+}
+.homeServiceHead-container > p {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
 }
 .mySwiper {
   /* border: solid blue; */
@@ -182,7 +193,7 @@
   font-size: 20px;
   padding: 20px;
 }
-.homeServiceMain-cardPara>h3{
+.homeServiceMain-cardPara > h3 {
   color: white;
 }
 .homeServiceMain-cardContainer:hover .ourServicesCardHead {
@@ -230,4 +241,10 @@
     box-shadow: 0 0 10px rgb(163, 163, 163);
     overflow: hidden;
   }
+  .homeServiceHead-container > h2 {
+  font-size: 30px;
+}
+.homeServiceHead-container > p {
+  width: 100%;
+}
 }

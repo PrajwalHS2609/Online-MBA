@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./UniversitiesMarquee.css";
 import Marquee from "react-fast-marquee";
@@ -35,7 +35,7 @@ const UniversitiesMarquee = () => {
     { id: 6, name: "VIT", img: vit, link: "" },
   ];
 
-    const handlePop = () => {
+  const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
   return (
@@ -44,6 +44,12 @@ const UniversitiesMarquee = () => {
         <h2>
           India’s Top <span> Online MBA</span> Universities You Need to Know!
         </h2>
+        <p>
+          Discover India’s top universities that integrate academic rigor with
+          industry-focused learning, delivering flexible programs aimed at
+          fostering professional advancement and preparing graduates for global
+          career pathways.
+        </p>
       </div>{" "}
       <div className="homeUniversity-container">
         <Marquee>

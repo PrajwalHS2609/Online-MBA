@@ -1,41 +1,39 @@
 import React from "react";
 import "./HomeAbout.css";
-import homeAboutUs from "@/Images/homeAbtUs.jpeg"
+import homeAboutUs from "@/Images/homeAbtUs.jpeg";
 import Image from "next/image";
 const HomeAbout = () => {
   return (
     <div className="homeAbout-container">
       <div className="homeAbout-wrapper">
         <div className="homeAbout-content">
-          <h2>About <span>Us</span></h2>
+          <h2>
+            About <span>Us</span>
+          </h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto
-            quibusdam fugit impedit facere? Fuga nostrum mollitia nulla. Facilis
-            reiciendis omnis officia quae accusamus repellendus, repellat et
-            incidunt? Quis, aperiam vero! Lorem ipsum dolor sit amet,
-            consectetur adipisicing elit. Mollitia iure earum ab error
-            perspiciatis expedita repellat quibusdam magni aut cum reiciendis,
-            minima, quod laboriosam quis cumque, assumenda tempore et
-            cupiditate!
+            At R18 Education, we believe that learning should be flexible,
+            accessible, and tailored to your goals. That’s why we offer a
+            comprehensive range of online and distance education programs,
+            including degrees, diplomas, and certification courses—designed to
+            help you upskill and progress at your own pace.
           </p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo,
-            ipsa. Repellat consequatur ipsum deleniti explicabo perspiciatis,
-            natus necessitatibus debitis consequuntur excepturi molestias iste,
-            sint a accusamus dolorum commodi deserunt ab.
+            We know choosing the right educational path can be challenging. Our
+            mission is to simplify that process by bringing together leading
+            online institutions and providing expert guidance to help you
+            discover the program that fits your aspirations.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-            sapiente quo doloremque porro fugiat modi eum. Necessitatibus
-            provident veritatis vero repudiandae deleniti quaerat dignissimos
-            eligendi? Pariatur, iusto. Dolor, porro minus.
+            With over 8 years of experience in the EdTech industry, we’ve
+            proudly supported more than 30,000 learners in achieving their
+            academic and professional milestones. Whether you’re aiming to
+            advance your career, explore new opportunities, or strengthen your
+            expertise, our dedicated team is here to connect you with the right
+            course and set you on the path to success.
           </p>
         </div>
         <div className="homeAbout-content">
-          <Image
-            src={homeAboutUs}
-            alt="homeAboutUs"
-          />
+          <Image src={homeAboutUs} alt="homeAboutUs" />
         </div>
       </div>
     </div>

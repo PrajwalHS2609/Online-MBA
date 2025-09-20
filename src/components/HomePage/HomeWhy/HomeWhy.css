@@ -12,7 +12,8 @@
 }
 
 .split-left img {
-  width: 100%;height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -27,7 +28,6 @@
   margin-bottom: 20px;
   font-size: 40px;
 }
-
 
 .split-right h2 span {
   color: var(--accentColor1);
@@ -46,4 +46,32 @@
   width: 30px;
   height: 30px;
   object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .split-right {
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+}
+  .split-right h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .split-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .split-why {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 10px 10px;
+  }
+  .split-left {
+    flex: 1;
+    min-width: 300px;
+  }
 }

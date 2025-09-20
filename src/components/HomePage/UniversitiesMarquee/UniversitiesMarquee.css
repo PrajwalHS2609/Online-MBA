@@ -6,12 +6,23 @@
   flex-direction: column;
   padding: 30px;
 }
+.homeUniversityHead-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .homeUniversityHead-container > h2 {
   font-size: 40px;
 }
 .homeUniversityHead-container > h2 > span {
-  font-size: 40px;
   color: var(--accentColor1);
+}
+.homeUniversityHead-container > p {
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
 }
 .homeUniversity-container {
   /* border: solid blue; */
@@ -89,9 +100,23 @@
   transform: translateY(0px);
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .homeUniversityMain-container {
+  /* border: solid red; */
+  padding: 10px;
+}
   .homeCountriesHead-container > h2::after {
     content: "";
     position: absolute;
     display: none;
+  }
+  .homeUniversityHead-container > h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .homeUniversityHead-container > p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
   }
 }

@@ -41,12 +41,14 @@ const HomeHeader = () => {
         <Image src={banner} alt="banner" />
         <div className="homeHeader-cover">
           <div className="homeHeader-content">
-            <h2>ONLINE MBA</h2>
+            <h2>
+              Learn, Lead, Succeed – <span>Online MBA</span> from Top Indian
+              Universities
+            </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-              repudiandae veritatis necessitatibus quaerat eius. Pariatur
-              distinctio consequuntur nihil repellendus eligendi non impedit
-              porro neque, optio, repudiandae, praesentium animi esse iste.
+              Unlock your leadership potential with an Online MBA from top
+              Indian universities. Gain global business insights, executive
+              skills, and career growth – all with flexible online learning.
             </p>
             <div className="homeHeader-contact">
               {/* <button onClick={handlePop}>Enroll Now</button> */}
@@ -65,7 +67,7 @@ const HomeHeader = () => {
                 <div className="header-keyIconContainer">
                   <span className="">
                     {" "}
-                    <x.icons className="header-keyIcons"/>
+                    <x.icons className="header-keyIcons" />
                   </span>
                 </div>
                 <h6>{x.content}</h6>

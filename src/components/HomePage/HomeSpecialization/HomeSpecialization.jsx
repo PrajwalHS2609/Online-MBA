@@ -211,6 +211,13 @@ const HomeSpecialization = () => {
         <h2>
           <span>MBA</span> Specialization
         </h2>
+        <p>
+          Choosing the right specialization is a vital step in bridging academic
+          learning with career ambitions. Universities offer structured
+          knowledge and practical skills that equip learners with expertise,
+          enabling them to excel and stand out in today’s highly competitive
+          corporate landscape.
+        </p>
       </div>{" "}
       <div className="homeServiceMain-container">
         <>
