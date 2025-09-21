@@ -49,10 +49,10 @@
 }
 @media screen and (max-width: 768px) {
   .split-right {
-  flex: 1;
-  min-width: 300px;
-  padding: 10px;
-}
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+  }
   .split-right h2 {
     margin-bottom: 20px;
     font-size: 30px;
@@ -73,5 +73,91 @@
   .split-left {
     flex: 1;
     min-width: 300px;
+  }
+}
+
+/* -------------------------------------Changed---------------------------- */
+.homeBenefits {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.homeBenefitsHead {
+  /* border: solid blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homeBenefitsHead > h6 {
+  background: var(--customGradient);
+  background-clip: text;
+  font-weight: bold;
+  color: transparent;
+  font-size: 18px;
+}
+.homeBenefitsHead > h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+.homeBenefitsHead > h2 > span {
+  background: var(--accentColor1);
+  background-clip: text;
+  color: transparent;
+}
+.homeBenefitsMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.homeBenefitsCard {
+  /* border: solid blue; */
+  width: 350px;
+  height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.homeBenefitsCard-img,
+.homeBenefitsCard-Head,
+.homeBenefitsCard-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeBenefitsCard-img {
+  /* border: solid red; */
+  width: 100px;
+}
+.homeBenefitsCard-img > img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.homeBenefitsCard-Head > h3 {
+  text-align: center;
+}
+.homeBenefitsCard-Content {
+  padding: 10px;
+  text-align: justify;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .homeBenefitsHead > h2 {
+    font-size: 30px;
   }
 }
