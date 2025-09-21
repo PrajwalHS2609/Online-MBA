@@ -29,7 +29,7 @@
   font-weight: bolder;
 }
 .homeTestimonialHead > h2 > span {
-  background:var(--customGradient);
+  background-color: var(--accentColor1);
   background-clip: text;
   color: transparent;
 }
@@ -126,7 +126,7 @@
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .homeTestimonial {
-    padding: 10px;
+    padding: 20px;
   }
   .homeTestimonialMain {
     width: 100%;

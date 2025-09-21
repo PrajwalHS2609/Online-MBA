@@ -6,6 +6,7 @@ import HomeAbout from './../components/HomePage/HomeAbout/HomeAbout';
 import HomeTestimonial from './../components/HomePage/HomeTestimonial/HomeTestimonial';
 import HomeWhy from './../components/HomePage/HomeWhy/HomeWhy';
 import HomeWhyMain from './../components/HomePage/HomeWhy/HomeWhyMain';
+import HomeContent from './../components/HomePage/HomeContent';
 
 export default function Homepage() {
   return (
@@ -17,6 +18,7 @@ export default function Homepage() {
       <HomeWhyMain/>
       <HomeAbout/>
       <HomeTestimonial/>
+      <HomeContent/>
     </div>
   );
 }

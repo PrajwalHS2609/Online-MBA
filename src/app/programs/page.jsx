@@ -2,7 +2,7 @@ import ProgramCourses from "../../components/ProgramPage/ProgramCourses/ProgramC
 import ProgramHeader from "../../components/ProgramPage/ProgramHeader/ProgramHeader";
 import HomeSpecialization from "./../../components/HomePage/HomeSpecialization/HomeSpecialization";
 import UniversitiesMarquee from './../../components/HomePage/UniversitiesMarquee/UniversitiesMarquee';
-import HomeWhy from './../../components/HomePage/HomeWhy/HomeWhy';
+import HomeWhyMain from './../../components/HomePage/HomeWhy/HomeWhyMain';
 
 export default function Programs() {
   return (
@@ -11,7 +11,7 @@ export default function Programs() {
       <ProgramCourses />
       <HomeSpecialization />
       <UniversitiesMarquee />
-      <HomeWhy />
+      <HomeWhyMain />
     </div>
   );
 }

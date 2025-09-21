@@ -1,0 +1,115 @@
+.courseHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+}
+.courseHead > h1 {
+  font-weight: bold;
+  font-size: 50px; /* Responsive font size */
+}
+.courseHead > h1 > span {
+  color: var(--accentColor1);
+}
+.courseHead > h2 {
+  font-weight: bold;
+  font-size: 50px; /* Responsive font size */
+}
+.courseHead > h2 > span {
+  color: var(--accentColor1);
+}
+.courseHead > p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  text-align: justify;
+  color: black;
+}
+.courseHead > p > a {
+  text-decoration: none;
+  color: var(--accentColor1);
+  font-weight: bold;
+}
+.courseHead-content {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--customBg1);
+}
+.courseHead-content > h1 {
+  color: var(--accentColor1);
+  font-size: 40px; /* Responsive font size */
+}
+.courseHead-content > h2 {
+  font-size: 30px; /* Responsive font size */
+    color: var(--accentColor1);
+
+}
+.courseHead-content > p {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  text-align: justify;
+  color: black;
+}
+.courseHead-content > p > a {
+  text-decoration: none;
+  color: var(--accentColor1);
+}
+.readMoreBtn {
+  background: var(--accentColor1);
+  border: none;
+  padding: 8px 16px;
+  margin-top: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.readMoreBtn:hover {
+  opacity: 0.9;
+}
+.courseHead-listContent{
+    display: flex;
+    justify-content: center;align-items: flex-start;
+    flex-direction: column;
+}
+.courseHead-listContent>h3{
+  color: var(--accentColor1);
+  font-size: 25px;
+}
+.courseHead-listContent>p{
+  color: black;
+  font-size: 18px;text-align: justify;
+}
+.courseHead-listContent>ul>li{
+text-align: justify;list-style: none;
+}
+.courseHead-listContent>ul>li>b{
+  color: var(--accentColor1);
+}
+.courseHead-listContent >p>a{
+  color: var(--accentColor1);text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .courseHead {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .courseHead > h1 {
+    font-weight: bold;
+    font-size: 30px; /* Responsive font size */
+  }
+  .courseHead-content > h2 {
+    font-size: 25px; /* Responsive font size */
+  }
+    .courseHead-listContent > h2 {
+    font-size: 20px; /* Responsive font size */
+  }
+  .courseHead > h2 {
+    font-weight: bold;
+    font-size: 30px; /* Responsive font size */
+  }
+}
+/* -

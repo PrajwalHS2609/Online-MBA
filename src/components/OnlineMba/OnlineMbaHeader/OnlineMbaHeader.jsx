@@ -1,16 +1,21 @@
 "use client";
 import React from "react";
 import "./OnlineMbaHeader.css";
+import banner from "./../../../Images/onlineMbaBanner.png";
+import Image from "next/image";
+import aicte from "@/Images/Approved/AICTE.png";
+import naac from "@/Images/Approved/NAAC.png";
+import nirf from "@/Images/Approved/NIRF.png";
+import qaa from "@/Images/Approved/QAA.png";
+import ugc from "@/Images/Approved/UGC.png";
+import wes from "@/Images/Approved/WES.png";
 const OnlineMbaHeader = () => {
   const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
   return (
     <div className="onlineHeader-container">
-      <img
-        src="https://static.wixstatic.com/media/0d481a_3a7c13cef30e47fe98a0b2bfba0385d5~mv2.jpg/v1/fill/w_1800,h_695,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0d481a_3a7c13cef30e47fe98a0b2bfba0385d5~mv2.jpg"
-        alt=""
-      />
+      <Image src={banner} alt="banner" />
       <div className="onlineHeader-cover">
         <div className="onlineHeader-content">
           <h6> ACCELERATE YOUR CAREER WITH A UGC-APPROVED DEGREE</h6>
@@ -34,11 +39,33 @@ const OnlineMbaHeader = () => {
           </div>
         </div>
         <div className="onlineHeader-content">
+          <ul>
+            <li>
+              <Image src={aicte} alt="aicte" />
+            </li>
+            <li>
+              <Image src={naac} alt="naac" />
+            </li>
+            <li>
+              <Image src={nirf} alt="nirf" />
+            </li>
+            <li>
+              <Image src={qaa} alt="qaa" />
+            </li>
+            <li>
+              <Image src={ugc} alt="ugc" />
+            </li>
+            <li>
+              <Image src={wes} alt="wes" />
+            </li>
+          </ul>
+        </div>
+        {/* <div className="onlineHeader-content">
           <img
             src="https://static.wixstatic.com/media/0d481a_904203a6733841e897e20829ce57088c~mv2.webp/v1/fill/w_657,h_740,al_c,q_85,enc_avif,quality_auto/ug_prog_girl_student-Photoroom.webp"
             alt=""
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

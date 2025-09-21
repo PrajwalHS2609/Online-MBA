@@ -5,7 +5,7 @@ const HomeTestimonialHead = () => {
     <div className="homeTestimonialHead">
       <h6>Testimonials</h6>
       <h2>
-        Voices of Success: Hear from Our <span>Students</span>
+        From Learning to Achievement: Stories That <span>Inspire</span>{" "}
       </h2>
     </div>
   );

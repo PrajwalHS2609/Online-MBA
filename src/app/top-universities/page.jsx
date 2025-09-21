@@ -1,14 +1,10 @@
 import HomeSpecialization from "../../components/HomePage/HomeSpecialization/HomeSpecialization";
 import HomeWhyMain from "../../components/HomePage/HomeWhy/HomeWhyMain";
 import UniversitiesMarquee from "../../components/HomePage/UniversitiesMarquee/UniversitiesMarquee";
-import OnlineMbaHeader from "../../components/OnlineMba/OnlineMbaHeader/OnlineMbaHeader";
-import OnlineMbaUniversities from "../../components/OnlineMba/OnlineMbaUniversities/OnlineMbaUniversities";
 
-export default function OnlineMba() {
+export default function TopUniversities() {
   return (
     <div>
-      <OnlineMbaHeader />
-      <OnlineMbaUniversities />
       <HomeSpecialization />
       <UniversitiesMarquee />
       <HomeWhyMain />

@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import "./HomeTestimonial.css";
 import Carousel from "react-bootstrap/Carousel";
 import quote from "@/Images/double-quotes.png";
@@ -20,13 +19,12 @@ const HomeTestimonialCarousel = () => {
           <br />
 
           <p>
-            I have completed my German A1 and A2 levels. Its a very good
-            institute to learn German with proper grammar knowledge. You will
-            have a great learning experience which you will definitely not get
-            with any other institutes. After finishing the first level itself
-            you will be able to see the difference by comparing with other
-            institute students. I will definitely recommend this institute to
-            everyone who wants to learn German properly.
+            R18 Education made my Online MBA admission at Amity University
+            seamless and stress-free. From clarifying course details to guiding
+            me through documentation, their team was always available with clear
+            and timely support. I felt confident in my decision, and today, I’m
+            proud to be part of Amity’s MBA program. Highly recommend R18
+            Education for anyone looking for trusted guidance!
           </p>
           <h3>Vivek Dhar</h3>
         </Carousel.Item>
@@ -36,13 +34,12 @@ const HomeTestimonialCarousel = () => {
           <br />
 
           <p>
-            Hi everyone, We where as family are relocating to Germany next
-            month. We where actually very worried how to go about with the
-            language. We took up a course at Prizma…me and my 6 year old son.
-            The training was very good. We have really grown a lot in the
-            language. The training center gives us good time and have are very
-            understanding. Aruna mam is very excellent teacher. Pls go ahead wit
-            the course here….thanks a lot.
+            I was confused about choosing the right university for my Online
+            MBA, but R18 Education guided me step by step. Their counselors
+            explained everything about VIT’s Online MBA program, from
+            specialization options to career prospects. The admission process
+            was smooth, and I received constant updates. Thanks to R18, I’m now
+            pursuing my MBA at VIT with confidence.
           </p>
           <h3>Madhuri Pochamreddy</h3>
         </Carousel.Item>
@@ -51,10 +48,12 @@ const HomeTestimonialCarousel = () => {
           <br />
           <br />
           <p>
-            Prizma is really very good for foreign language. Its really worth to
-            join. I Have competed German A1 and also going to start A. Trainers
-            are very good and very understanding. I really appreciate there
-            audio and video facility for the students.
+            Applying for an Online MBA at Manipal felt overwhelming at first,
+            but R18 Education made the process simple and transparent. Their
+            expertise, quick responses, and personalized support helped me
+            secure admission without any hassle. I truly appreciate their
+            dedication to helping students achieve their goals. If you’re
+            planning for 2025 admissions, R18 is the right choice!
           </p>
           <h3>Manish Verma</h3>
         </Carousel.Item>
@@ -63,11 +62,12 @@ const HomeTestimonialCarousel = () => {
           <br />
           <br />
           <p>
-            I attended German A1 and A2 at Prizma. I am quite satisfied with my
-            progress I have made. The German instructor is quite knowledgeable
-            with regards to the language. The only issue I found during my time,
-            was that the classes only ran for 1-2 hours. But regardless, I am
-            thankful for the effort everyone at Prizma academy.
+            R18 Education made my Online MBA admission at Amity University
+            incredibly smooth. Their team patiently guided me through every
+            step, clarified my doubts, and ensured I submitted everything on
+            time. Thanks to their support, I’m now pursuing my MBA at Amity with
+            full confidence. Truly a reliable partner for higher education
+            guidance!
           </p>
           <h3>Devaiah Bopanna</h3>
         </Carousel.Item>
@@ -76,12 +76,12 @@ const HomeTestimonialCarousel = () => {
           <br />
           <br />
           <p>
-            I have done till B1 level of German language here and must say they
-            are really expertise in this . Kudos to entire team of Prizma . A
-            genuine feedback have a little more flexibility in timings as being
-            a working professional sometime it becomes a little challenging to
-            manage office also. Otherwise highly recommend to all looking for a
-            good linguistic learning. Good luck
+            I wanted to pursue an Online MBA from VIT but was unsure about the
+            admission process. R18 Education not only explained the program
+            details clearly but also helped me choose the right specialization.
+            Their timely updates and expert advice made everything easy. I’m
+            grateful for their guidance and highly recommend them to anyone
+            planning for 2025 admissions.
           </p>
           <h3>Ashish Singh</h3>
         </Carousel.Item>
