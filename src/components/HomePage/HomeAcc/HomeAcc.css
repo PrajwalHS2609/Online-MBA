@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   padding: 10px;
 }
 .homeAccHead-container {
@@ -80,5 +79,13 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .homeAccHead-container > h2 {
   font-size: 30px;
+}
+.homeAcc-container {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 }
