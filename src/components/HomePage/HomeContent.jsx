@@ -7,7 +7,6 @@ const HomeContent = () => {
   return (
     <div className="courseHead">
       <div className="courseHead-content">
-        <h1>Industry-Recognized Hiring Partners</h1>
         <p>
           {" "}
           In the contemporary professional landscape, pursuing a Master of
