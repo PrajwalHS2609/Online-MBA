@@ -102,61 +102,6 @@ const HomeTestimonialCarousel = () => {
           </p>
           <h3>Karthik Kamath</h3>
         </Carousel.Item>
-        <Carousel.Item>
-          <Image src={quote} alt="" />
-          <br />
-          <br />
-          <p>
-            One of the best institute for german course, i did my A2 course
-            online, and i have passed my A2 exam with really good marks. The
-            faculty is really great, i was in contact with Mr. Sahil and he was
-            very helpful, he would often take input from me on how the classes
-            are going and if i needed any support. I also had a really nice
-            teacher, she was very smart, had lot of patience and gave regular
-            excercises to practice, and always flexible with the timings, since
-            i am working full time i had to do class in the free time and
-            weekends. Quite expensive but it's worth it.
-          </p>
-          <h3>Koushik Hemmanahalli</h3>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src={quote} alt="" />
-          <br />
-          <br />
-          <p>
-            Approached the institute for my Daughter's French Classes and the
-            results were phenomenal. Really impressed with the Facilities &
-            Commitment of the Staff. Sahil personally keeps a track of progress
-            and has been giving valuable inputs as how to progress at every
-            stage. Highly recommended.
-          </p>
-          <h3>Ajith Kappil</h3>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src={quote} alt="" />
-          <br />
-          <br />
-          <p>
-            Good faculties, finished till German B1 level with them. Learning
-            with lot of fun activities. Thanks to my trainers and entire team
-            here. Whatever days i could not attend classes due to office
-            meetings they arranged for Online Classes, which was a great support
-            being a working professional. Very flexible with timings also.
-            Cheers
-          </p>
-          <h3>Tejaram Sencha</h3>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Image src={quote} alt="" />
-          <br />
-          <br />
-          <p>
-            Superb enviornment for Language Learning , me and my friend
-            completed German Language Classes here as we had a plan to move to
-            Munich by Jan . Kudos to entire team
-          </p>
-          <h3>Sharath Kumar Kannan</h3>
-        </Carousel.Item>
       </Carousel>
     </div>
   );

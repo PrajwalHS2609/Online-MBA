@@ -1,0 +1,155 @@
+.universities-container {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.universities-headContainer {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.universities-headContainer > h2 {
+  font-size: 40px;
+  color: #222;
+}
+
+.universities-headContainer > h2 > span {
+  color: var(--accentColor1);
+}
+
+/* Card grid */
+.universities-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Card */
+.universities-card {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.universities-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Image section */
+.universities-cardImg {
+  width: 100%;
+  height: 60%;
+}
+
+.universities-cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.universities-cardContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px;
+  background: #fff;
+  border-radius: 20px 20px 0 0; /* top corners only */
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.universities-cardContent h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--customColor1);
+  margin-bottom: 8px;
+}
+
+.universities-cardContent .rating {
+  font-size: 0.95rem;
+  color: #f59e0b;
+  margin: 4px 0;
+}
+
+.universities-cardContent .fees {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 4px 0;
+}
+
+.universities-cardContent .opted {
+  font-size: 0.85rem;
+  color: #e63946;
+  margin-top: 10px;
+}
+
+/* Button */
+.uni-btn {
+  margin-top: 12px;
+  background: var(--accentColor1);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.uni-btn:hover {
+  transform: scale(1.05);
+  background: #e69201;
+}
+/* Stats Container */
+.uni-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+/* Each Row */
+.uni-stat {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+/* Icon */
+.stat-icon {
+  font-size: 1.1rem;
+  margin-right: 8px;
+}
+
+/* Label */
+.stat-label {
+  font-weight: 600;
+  margin-right: 6px;
+  color: #333;
+}
+
+/* Value */
+.stat-value {
+  font-weight: 700;
+  color: var(--accentColor1);
+  margin-right: 6px;
+}
+
+/* Extra small note */
+.stat-extra {
+  font-size: 0.8rem;
+  color: #666;
+}
+@media screen and (max-width: 768px) {
+  .universities-headContainer > h2 {
+    font-size: 30px;
+  }
+}

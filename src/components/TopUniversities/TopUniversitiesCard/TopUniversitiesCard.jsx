@@ -1,12 +1,12 @@
 import React from "react";
-import "./OnlineMbaUniversities.css";
+import "./TopUniversitiesCard.css"
 import Image from "next/image";
 import manipal from "@/Images/UniversitiesImg/manipal.jpg";
 import vit from "@/Images/UniversitiesImg/vit.png";
 import jain from "@/Images/UniversitiesImg/jain.jpg";
 import amity from "@/Images/UniversitiesImg/amity.jpg";
 import nims from "@/Images/UniversitiesImg/nims.jpg";
-const OnlineMbaUniversities = () => {
+const TopUniversitiesCard = () => {
   const card = [
     { id: 1, img: vit, title: "VIT" },
     { id: 2, img: jain, title: "Jain University" },
@@ -18,7 +18,7 @@ const OnlineMbaUniversities = () => {
     <div className="universities-container">
       <div className="universities-headContainer">
         <h2>
-          Best Universities for <span>Online MBA</span>
+          Top Universities for <span>Online MBA</span>
         </h2>
       </div>
 
@@ -64,4 +64,4 @@ const OnlineMbaUniversities = () => {
   );
 };
 
-export default OnlineMbaUniversities;
+export default TopUniversitiesCard;

@@ -18,21 +18,20 @@ const UniversitiesMarquee = () => {
       img: amity,
       link: "/",
     },
-    { id: 2, name: "LPU", img: lpu, link: "" },
     {
-      id: 3,
+      id: 2,
       name: "JAIN UNIVERSITY",
       img: jain,
       link: "/",
     },
     {
-      id: 4,
+      id: 3,
       name: "MANIPAL UNIVERSITY",
       img: manipal,
       link: "/",
     },
-    { id: 5, name: "NMIMS UNIVERSITY", img: nims, link: "/" },
-    { id: 6, name: "VIT", img: vit, link: "/" },
+    { id: 4, name: "NMIMS UNIVERSITY", img: nims, link: "/" },
+    { id: 5, name: "VIT", img: vit, link: "/" },
   ];
 
   const handlePop = () => {

@@ -209,7 +209,7 @@ const HomeSpecialization = () => {
     <div className="homeService-container">
       <div className="homeServiceHead-container">
         <h2>
-          <span>MBA</span> Specialization
+          Online <span>MBA</span> Specialization
         </h2>
         <p>
           Choosing the right specialization is a vital step in bridging academic

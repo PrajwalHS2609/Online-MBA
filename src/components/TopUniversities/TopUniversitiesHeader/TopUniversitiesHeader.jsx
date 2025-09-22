@@ -1,6 +1,6 @@
 "use client";
+
 import React from "react";
-import "./OnlineMbaHeader.css";
 import banner from "./../../../Images/onlineMbaBanner.png";
 import Image from "next/image";
 import aicte from "@/Images/Approved/AICTE.png";
@@ -9,7 +9,8 @@ import nirf from "@/Images/Approved/NIRF.png";
 import qaa from "@/Images/Approved/QAA.png";
 import ugc from "@/Images/Approved/UGC.png";
 import wes from "@/Images/Approved/WES.png";
-const OnlineMbaHeader = () => {
+import "./TopUniversitiesHeader.css";
+const TopUniversitiesHeader = () => {
   const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
@@ -20,7 +21,7 @@ const OnlineMbaHeader = () => {
         <div className="onlineHeader-content">
           <h6> ACCELERATE YOUR CAREER WITH A UGC-APPROVED DEGREE</h6>
           <h2>
-            Your Gateway to an <span>Online MBA</span>
+            Top <span>Online MBA</span> Universities
           </h2>
           {/* <h5>Flexible, Accredited, and Designed for Career Growth</h5> */}
           <p>
@@ -71,4 +72,4 @@ const OnlineMbaHeader = () => {
   );
 };
 
-export default OnlineMbaHeader;
+export default TopUniversitiesHeader;

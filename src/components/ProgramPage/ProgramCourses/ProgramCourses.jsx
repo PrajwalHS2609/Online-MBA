@@ -5,27 +5,167 @@ const ProgramCourses = () => {
   const card = [
     {
       id: 1,
-      title: "MBA (Master of Business Administration)",
+      title: "MBA (General Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
       link: "/",
     },
     {
       id: 2,
-      title: "MBA (Master of Business Administration)",
+      title: "MBA (Finance)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
       link: "/",
     },
     {
       id: 3,
-      title: "MBA (Master of Business Administration)",
+      title: "MBA (Marketing)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
       link: "/",
     },
     {
       id: 4,
+      title: "MB (HR Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 5,
+      title: "MBA (Information Technology)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 6,
+      title: "MBA (Operation)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 7,
+      title: "MBA (Supply Chain Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 8,
+      title: "MBA (Data Analytics)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 9,
+      title: "MBA (Business Analytics)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 10,
+      title: "MBA (Hospitality Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 11,
+      title: "MBA (International Business)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 12,
+      title: "MBA (Project Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 13,
+      title: "MBA (Logistic and Supply Chain )",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 14,
+      title: "MBA (International Finance)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 15,
+      title: "MBA (Retail Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 16,
+      title: "MBA (IT and Fintech )",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 17,
+      title: "MBA (Fintech Management)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 18,
+      title: "MBA (Data Science and Analytics)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 19,
+      title: "MBA (Healthcare and Hospital)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 20,
+      title: "MBA (Banking and Finance)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 21,
+      title: "MBA (Marketing and HRM)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 22,
+      title: "MBA (Master of Business Administration)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 23,
+      title: "MBA (Master of Business Administration)",
+      description:
+        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+      link: "/",
+    },
+    {
+      id: 24,
       title: "MBA (Master of Business Administration)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
@@ -39,37 +179,12 @@ const ProgramCourses = () => {
           Unlock Your Career Potential — 100% <span>Online Programs</span>
         </h2>
       </div>
-      <div className="programCourse-wrapper">
-        {card.map((x) => (
-          <div className="programCourse-card" key={x.id}>
-            <div className="programCourse-img">
-              <img
-                src="https://static.wixstatic.com/media/nsplsh_8a1fda874d084a71b4b42cbe45782e77~mv2.jpg/v1/fill/w_448,h_592,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Image%20by%20Muhammad%20Faiz%20Zulkeflee.jpg"
-                alt=""
-              />
-            </div>
-            <div className="programCourse-content">
-              <h4>{x.title}</h4>
-              <div className="programCourse-duration">
-                <ul>
-                  <li>
-                    <b>Duration:</b> 12-24 months
-                  </li>
-                  <li>
-                    <b>Format:</b> Online + Optional Campus Immersion
-                  </li>
-                  <li>
-                    <b>Career Roles:</b> Manager, Consultant, Strategist,
-                    Entrepreneur
-                  </li>
-                </ul>
-                <Link href={x.link}>
-                  {" "}
-                  <button>Learn More</button>
-                </Link>
-              </div>
-              <p>{x.description}</p>
-            </div>
+
+      {/* one container for all items */}
+      <div className="mba-container">
+        {card.map((x, i) => (
+          <div className="mba-item" key={i}>
+            <Link href={x.link}>{x.title}</Link>
           </div>
         ))}
       </div>
