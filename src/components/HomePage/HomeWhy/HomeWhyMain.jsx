@@ -98,7 +98,7 @@ const HomeWhyMain = () => {
       </div>
       <div className="homeBenefitsMain">
         {card.map((x) => (
-          <div className="homeBenefitsCard">
+          <div className="homeBenefitsCard" key={x.id}>
             <div className="homeBenefitsCard-img">
               <Image src={x.img} alt="" />
             </div>

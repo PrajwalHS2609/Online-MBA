@@ -16,23 +16,23 @@ const UniversitiesMarquee = () => {
       id: 1,
       name: "AMITY UNIVERSITY",
       img: amity,
-      link: "australia-apostille-services-in-bangalore",
+      link: "/",
     },
     { id: 2, name: "LPU", img: lpu, link: "" },
     {
       id: 3,
       name: "JAIN UNIVERSITY",
       img: jain,
-      link: "bahrain-embassy-attestation-in-bangalore",
+      link: "/",
     },
     {
       id: 4,
       name: "MANIPAL UNIVERSITY",
       img: manipal,
-      link: "egypt-embassy-attestation-in-bangalore",
+      link: "/",
     },
-    { id: 5, name: "NMIMS UNIVERSITY", img: nims, link: "" },
-    { id: 6, name: "VIT", img: vit, link: "" },
+    { id: 5, name: "NMIMS UNIVERSITY", img: nims, link: "/" },
+    { id: 6, name: "VIT", img: vit, link: "/" },
   ];
 
   const handlePop = () => {
