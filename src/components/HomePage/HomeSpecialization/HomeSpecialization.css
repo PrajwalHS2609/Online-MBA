@@ -18,6 +18,7 @@
 }
 .homeServiceHead-container > h2 {
   font-size: 40px;
+  text-align: center;
 }
 .homeServiceHead-container > h2 > span {
   color: var(--accentColor1);
@@ -242,9 +243,9 @@
     overflow: hidden;
   }
   .homeServiceHead-container > h2 {
-  font-size: 30px;
-}
-.homeServiceHead-container > p {
-  width: 100%;
-}
+    font-size: 30px;
+  }
+  .homeServiceHead-container > p {
+    width: 100%;
+  }
 }
