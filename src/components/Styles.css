@@ -182,7 +182,6 @@
 }
 
 .custom-table table {
-  width: 100%;
   border-collapse: collapse;
   width: 70%; /* ensures table is scrollable on small screens */
 }
@@ -219,6 +218,15 @@
   .custom-table table {
     font-size: 0.9rem;
   }
+  .custom-table table {
+
+  width: 100%; /* ensures table is scrollable on small screens */
+}
+.custom-table {
+  overflow-x: auto;
+
+  padding: 10px;
+}
 }
 
 /* --------------------------------------------------------SlugHeading-------------------------------------------------- */
