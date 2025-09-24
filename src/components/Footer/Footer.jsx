@@ -5,7 +5,17 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer-content"></div>
       <div className="footer-content">
-        <b>Copyright © 2025 OnlineMBA</b>
+        <div className="footer-item">
+          <b>Copyright © 2025 OnlineMBA</b>
+        </div>
+        {/* <div className="footer-item">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div> */}
       </div>
     </div>
   );
