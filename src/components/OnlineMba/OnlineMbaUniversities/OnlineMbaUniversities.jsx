@@ -8,11 +8,11 @@ import amity from "@/Images/UniversitiesImg/amity.jpg";
 import nims from "@/Images/UniversitiesImg/nims.jpg";
 const OnlineMbaUniversities = () => {
   const card = [
-    { id: 1, img: vit, title: "VIT" },
-    { id: 2, img: jain, title: "Jain University" },
-    { id: 3, img: amity, title: "Amity University" },
-    { id: 4, img: nims, title: "NMIMS University" },
-    { id: 5, img: manipal, title: "Mainpal university" },
+    { id: 1, img: vit, title: "VIT", price: "1,90,000" },
+    { id: 2, img: jain, title: "Jain University", price: "2,20,000" },
+    { id: 3, img: amity, title: "Amity University", price: "1,80,000" },
+    { id: 4, img: nims, title: "NMIMS University", price: "1,99,000" },
+    { id: 5, img: manipal, title: "Mainpal university", price: "1,75,000" },
   ];
   return (
     <div className="universities-container">
@@ -43,7 +43,7 @@ const OnlineMbaUniversities = () => {
                 <div className="uni-stat">
                   <span className="stat-icon">💰</span>
                   <span className="stat-label">Fees:</span>
-                  <span className="stat-value">₹1,50,000</span>
+                  <span className="stat-value">₹ {x.price}</span>
                   <span className="stat-extra">(2 Years)</span>
                 </div>
 
