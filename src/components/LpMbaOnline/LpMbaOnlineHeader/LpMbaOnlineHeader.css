@@ -1,0 +1,237 @@
+/* Hero Section */
+.hero-gradient {
+    background: linear-gradient(135deg, #1E3A8A, #3B82F6); /* Example gradient */
+    color: white;
+    padding: 4rem 0;
+}
+
+@media (min-width: 768px) {
+    .hero-gradient {
+        padding: 6rem 0;
+    }
+}
+
+.hero-container {
+    max-width: 1120px; /* approx 7xl */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+    .hero-container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-container {
+        padding: 0 2rem;
+    }
+}
+
+/* Flex layout for hero */
+.hero-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .hero-flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hero-left {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero-left {
+        width: 50%;
+    }
+}
+
+/* Typography */
+.hero-left h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-left h1 {
+        font-size: 3rem;
+    }
+}
+
+.hero-left h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-left h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-left p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.hero-left .btn-primary {
+    background-color: white;
+    color: #1D4ED8; /* blue-800 */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero-left .btn-primary:hover {
+    background-color: #f3f4f6; /* gray-100 */
+}
+
+.hero-left .btn-secondary {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-left .btn-secondary:hover {
+    background-color: white;
+    color: #1D4ED8;
+}
+
+/* Award info */
+.award-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.award-info i {
+    color: #FACC15; /* yellow-400 */
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+/* Right section - form */
+.hero-right {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-right {
+        width: 50%;
+        margin-top: 0;
+    }
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-width: 32rem;
+    width: 100%;
+    margin: 0 auto;
+    color: #1F2937; /* gray-800 */
+}
+
+.form-container h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1D4ED8;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #D1D5DB; /* gray-300 */
+    border-radius: 0.5rem;
+    outline: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #3B82F6; /* blue-500 */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.form-container .error-message {
+    color: #DC2626; /* red-600 */
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+.form-container button {
+    width: 100%;
+    background-color: #1D4ED8;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #2563EB; /* blue-700 */
+}
+
+/* Success message */
+.success-message {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.success-message .icon {
+    font-size: 2rem;
+    color: #16A34A; /* green-600 */
+    margin-bottom: 1rem;
+}
+
+.ty-item {
+    border-top: 1px solid #E5E7EB; /* gray-200 */
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.ty-item a {
+    color: #2563EB;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.ty-item a:hover {
+    color: #1E40AF;
+    text-decoration: underline;
+}
+
+.downloadBrochureLink {
+    cursor: pointer;
+}

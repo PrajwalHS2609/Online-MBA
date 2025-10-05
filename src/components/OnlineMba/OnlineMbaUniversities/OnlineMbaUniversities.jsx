@@ -11,7 +11,7 @@ const OnlineMbaUniversities = () => {
     { id: 1, img: vit, title: "VIT" },
     { id: 2, img: jain, title: "Jain University" },
     { id: 3, img: amity, title: "Amity University" },
-    { id: 4, img: nims, title: "NIMS University" },
+    { id: 4, img: nims, title: "NMIMS University" },
     { id: 5, img: manipal, title: "Mainpal university" },
   ];
   return (
