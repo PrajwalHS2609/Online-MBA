@@ -85,23 +85,6 @@ const HomeTestimonialCarousel = () => {
           </p>
           <h3>Ashish Singh</h3>
         </Carousel.Item>
-        <Carousel.Item>
-          <Image src={quote} alt="" />
-          <br />
-          <br />
-          <p>
-            Just completed my A1 level Spanish speaking class with Prizma
-            Academy. It was really good the way they took the classes and
-            explained all basics about Spanish language. The faculties are
-            really good and helpful. Since I am working, my classes were held
-            only on weekends. This is a really good institute for learning
-            foreign language. You do not get a course completion certificate
-            from the institute at the end of the course (level). They will give
-            you a certificate confirming you've joined the course. For course
-            completion certificate you need to write Delle exam.
-          </p>
-          <h3>Karthik Kamath</h3>
-        </Carousel.Item>
       </Carousel>
     </div>
   );
