@@ -7,19 +7,19 @@ import nirf from "@/Images/Approved/NIRF.png";
 import qaa from "@/Images/Approved/QAA.png";
 import ugc from "@/Images/Approved/UGC.png";
 import wes from "@/Images/Approved/WES.png";
-import "@/components/OnlineMba/OnlineMbaHeader/OnlineMbaHeader.css"
+import "./ContentHeader.css"
 const ContentHeader = (props) => {
   const handlePop = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
   return (
-    <div className="onlineHeader-container">
+    <div className="contentHeader-container">
       <img src={props.img} alt={props.title} />
-      <div className="onlineHeader-cover">
-        <div className="onlineHeader-content">
+      <div className="contentHeader-cover">
+        <div className="contentHeader-content">
           <h2>{props.title}</h2>
 
-          <div className="onlineHeader-btnContainer">
+          <div className="contentHeader-btnContainer">
             <button className="button-87" role="button" onClick={handlePop}>
               Enroll Now
             </button>{" "}
@@ -29,7 +29,7 @@ const ContentHeader = (props) => {
             </a>
           </div>
         </div>
-        <div className="onlineHeader-content">
+        <div className="contentHeader-content">
           <ul>
             <li>
               <Image src={aicte} alt="aicte" />
@@ -51,7 +51,7 @@ const ContentHeader = (props) => {
             </li>
           </ul>
         </div>
-        {/* <div className="onlineHeader-content">
+        {/* <div className="contentHeader-content">
           <img
             src="https://static.wixstatic.com/media/0d481a_904203a6733841e897e20829ce57088c~mv2.webp/v1/fill/w_657,h_740,al_c,q_85,enc_avif,quality_auto/ug_prog_girl_student-Photoroom.webp"
             alt=""

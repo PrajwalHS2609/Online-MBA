@@ -8,7 +8,15 @@ import HomeWhy from "./../components/HomePage/HomeWhy/HomeWhy";
 import HomeWhyMain from "./../components/HomePage/HomeWhy/HomeWhyMain";
 import HomeContent from "./../components/HomePage/HomeContent";
 import HomePartner from "./../components/HomePage/HomePartner/HomePartner";
+import UniversitiesFees from './../components/HomePage/UniversitiesFees/UniversitiesFees';
 
+export const metadata = {
+  title:"Online MBA Course from India’s Top University at Affordable Fees",
+  description:
+    "Advance your career with a flexible Online MBA Course designed for working professionals. Gain leadership, management, and strategic business skills anytime, anywhere.",
+  canonical: "https://onlinembaadmission.co.in/",
+  keywords: [],
+}
 export default function Homepage() {
   return (
     <div>
@@ -18,6 +26,7 @@ export default function Homepage() {
       <UniversitiesMarquee />
       <HomeWhyMain />
       <HomeAbout />
+      <UniversitiesFees/>
       <HomeTestimonial />
       <HomePartner />
       <HomeContent />

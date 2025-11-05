@@ -1,0 +1,146 @@
+.onlineEligibility-container {
+  width: 100%;
+  padding: 70px 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.onlineEligibility-headContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.onlineEligibility-headContainer h2 {
+  font-size: 40px;
+  color: #222;
+  text-align: center;
+  width: 100%;
+}
+
+.onlineEligibility-headContainer h2 span {
+  color: var(--accentColor1);
+}
+
+.onlineEligibility-headContainer p {
+  width: 70%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.eligibility-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  gap: 30px;
+  position: relative;
+}
+
+/* ---- Card Styling ---- */
+.eligibility-card {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  gap: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  width: 75%;
+  border-left: 6px solid var(--accentColor1);
+}
+
+.eligibility-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Staggered Layout (like a timeline) --- */
+.card-1 {
+  align-self: flex-start;
+  margin-left: 0;
+}
+.card-2 {
+  align-self: center;
+}
+.card-3 {
+  align-self: flex-end;
+}
+
+/* ---- Icon Styling ---- */
+.eligibility-icon {
+  font-size: 28px;
+  color: var(--accentColor1);
+  background: var(--neutralColor);
+  border-radius: 50%;
+  padding: 14px;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eligibility-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.eligibility-content p {
+  font-size: 15.5px;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* ---- Responsive Design ---- */
+@media (max-width: 1024px) {
+  .eligibility-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .onlineEligibility-container {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .onlineEligibility-headContainer h2 {
+    font-size: 30px;
+    color: #222;
+    text-align: center;
+    width: 100%;
+  }
+  .eligibility-cards {
+    align-items: center;
+    width: 100%;
+  }
+
+  .eligibility-card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .eligibility-icon {
+    margin-bottom: 10px;
+  }
+
+  .onlineEligibility-headContainer p {
+    width: 100%;
+    text-align: justify;
+  }
+}

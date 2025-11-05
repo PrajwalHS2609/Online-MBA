@@ -27,24 +27,24 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              href="/online-mba"
-              className={pathname === "/online-mba" ? "active" : ""}
+              href="/online-mba-course-admission"
+              className={pathname === "/online-mba-course-admission" ? "active" : ""}
             >
               Online MBA
             </Link>
           </li>
           <li>
             <Link
-              href="/programs"
-              className={pathname === "/programs" ? "active" : ""}
+              href="/online-mba-programs-for-working-professionals"
+              className={pathname === "/online-mba-programs-for-working-professionals" ? "active" : ""}
             >
               Programs
             </Link>
           </li>
           <li>
             <Link
-              href="/top-universities"
-              className={pathname === "/top-universities" ? "active" : ""}
+              href="/online-mba-course-from-top-indian-colleges"
+              className={pathname === "/online-mba-course-from-top-indian-colleges" ? "active" : ""}
             >
               Top Universities
             </Link>
@@ -74,17 +74,17 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <Link href="/online-mba" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba" ? "active" : ""}>
+              <Link href="/online-mba-course-admission" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-course-admission" ? "active" : ""}>
                 Online MBA
               </Link>
             </li>
             <li>
-              <Link href="/programs" onClick={() => setSidebarOpen(false)} className={pathname === "/programs" ? "active" : ""}>
-                Programs
+              <Link href="/online-mba-programs-for-working-professionals" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-programs-for-working-professionals" ? "active" : ""}>
+                online-mba-programs-for-working-professionals
               </Link>
             </li>
             <li>
-              <Link href="/top-universities" onClick={() => setSidebarOpen(false)} className={pathname === "/top-universities" ? "active" : ""}>
+              <Link href="/online-mba-course-from-top-indian-colleges" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-course-from-top-indian-colleges" ? "active" : ""}>
                 Top Universities
               </Link>
             </li>

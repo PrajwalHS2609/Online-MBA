@@ -12,7 +12,7 @@ const OnlineMbaUniversities = () => {
     { id: 2, img: jain, title: "Jain University", price: "2,20,000" },
     { id: 3, img: amity, title: "Amity University", price: "1,80,000" },
     { id: 4, img: nims, title: "NMIMS University", price: "1,99,000" },
-    { id: 5, img: manipal, title: "Mainpal university", price: "1,75,000" },
+    { id: 5, img: manipal, title: "Mainpal University", price: "1,75,000" },
   ];
   return (
     <div className="universities-container">

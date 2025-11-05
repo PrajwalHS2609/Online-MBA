@@ -1,0 +1,103 @@
+.process-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  background: #fff;
+  gap: 30px;
+}
+.process-heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.process-heading > h2 {
+  font-size: 40px;
+  color: #222;
+  text-align: center;
+  width: 100%;
+}
+
+.process-heading > h2 > span {
+  color: var(--accentColor1);
+}
+.process-heading > p {
+  width: 70%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.process-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.process-step {
+  position: relative;
+  text-align: center;
+  width: 18%;
+  min-width: 180px;
+}
+
+.process-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.process-step h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--accentColor1);
+}
+
+.process-step p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.process-line {
+  position: absolute;
+  top: 40px;
+  right: -50%;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .process-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-step {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .process-line {
+    display: none;
+  }
+}

@@ -1,0 +1,118 @@
+.mbaSpecialization-container {
+  width: 100%;
+  padding: 70px 20px;
+  background: var(--customBg1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mbaSpecialization-header {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+
+.mbaSpecialization-header h2 {
+  font-size: 40px;
+  color: #222;
+}
+
+.mbaSpecialization-header h2 span {
+  color: var(--accentColor1);
+}
+
+.mbaSpecialization-header p {
+  margin-top: 15px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.mbaSpecialization-header h3 {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* --- Grid Section --- */
+.specialization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.specialization-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 30px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.specialization-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid var(--accentColor1);
+}
+
+/* --- Icon Style --- */
+.specialization-icon {
+  font-size: 28px;
+  color: var(--accentColor1);
+  background: var(--neutralColor);
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+}
+
+.specialization-content h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+.specialization-content p {
+  color: #444;
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .specialization-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mbaSpecialization-header h2 {
+    font-size: 26px;
+  }
+
+  .mbaSpecialization-header p {
+    font-size: 15px;
+  }
+
+  .specialization-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .specialization-icon {
+    margin-bottom: 10px;
+  }
+}

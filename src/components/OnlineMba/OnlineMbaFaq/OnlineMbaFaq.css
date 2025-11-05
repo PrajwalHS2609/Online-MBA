@@ -1,0 +1,62 @@
+.onlineMbaFaq-container {
+  /* border: solid red; */
+  padding: 50px;
+  background-color: var(--customBg1);
+  margin-top: 30px;
+}
+.onlineMbaFaq-wrapper {
+  /* border: solid blue; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.onlineMbaFaq-content {
+  /* border: solid green; */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.onlineMbaFaq-content > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.onlineMbaFaq-content > h2 > span {
+  color: var(--accentColor1);
+}
+.onlineMbaFaq-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--accentColor1) !important;
+  color: white;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.onlineMbaFaq-accItem {
+  border-bottom: solid var(--accentColor1);
+  margin: 10px;
+}
+.onlineMbaFaq-accHeader {
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .onlineMbaFaq-container {
+    /* border: solid red; */
+    padding: 10px;
+  }
+  .onlineMbaFaq-wrapper {
+    /* border: solid blue; */
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .onlineMbaFaq-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 10px;
+  }
+}

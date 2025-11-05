@@ -1,0 +1,27 @@
+.onlineMbaAbout-container {
+  /* border: solid red; */
+  height: 100%;
+  width: 100%;
+  padding: 70px;
+}
+.onlineMbaAbout-container > h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.onlineMbaAbout-container > h2 > span {
+  color: var(--accentColor1);
+}
+.onlineMbaAbout-container > p {
+  font-size: 20px;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .onlineMbaAbout-container {
+    /* border: solid red; */
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+}
