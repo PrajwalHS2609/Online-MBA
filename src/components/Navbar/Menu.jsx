@@ -13,8 +13,6 @@ const Menu = () => {
     document.querySelector(".popup-container").style.display = "flex";
   };
 
-
-
   return (
     <div className="navbar-container">
       {/* Desktop menu */}
@@ -28,7 +26,9 @@ const Menu = () => {
           <li>
             <Link
               href="/online-mba-course-admission"
-              className={pathname === "/online-mba-course-admission" ? "active" : ""}
+              className={
+                pathname === "/online-mba-course-admission" ? "active" : ""
+              }
             >
               Online MBA
             </Link>
@@ -36,7 +36,11 @@ const Menu = () => {
           <li>
             <Link
               href="/online-mba-programs-for-working-professionals"
-              className={pathname === "/online-mba-programs-for-working-professionals" ? "active" : ""}
+              className={
+                pathname === "/online-mba-programs-for-working-professionals"
+                  ? "active"
+                  : ""
+              }
             >
               Programs
             </Link>
@@ -44,7 +48,11 @@ const Menu = () => {
           <li>
             <Link
               href="/online-mba-course-from-top-indian-colleges"
-              className={pathname === "/online-mba-course-from-top-indian-colleges" ? "active" : ""}
+              className={
+                pathname === "/online-mba-course-from-top-indian-colleges"
+                  ? "active"
+                  : ""
+              }
             >
               Top Universities
             </Link>
@@ -57,49 +65,78 @@ const Menu = () => {
 
       {/* Hamburger icon for mobile */}
       <div className="repMenu-container">
-        <TbMenu3 className="respMenu-icon" onClick={() => setSidebarOpen(true)} />
+        <TbMenu3
+          className="respMenu-icon"
+          onClick={() => setSidebarOpen(true)}
+        />
       </div>
 
       {/* Sidebar menu */}
-        <div  className={`repMenu-content ${sidebarOpen ? "show" : ""}`}>
-          <TbX
-            className="respMenu-icon"
-            style={{ position: "absolute", top: "20px", right: "20px" }}
-           onClick={() => setSidebarOpen(false)}
-          />
-          <ul  >
-            <li>
-              <Link href="/" onClick={() => setSidebarOpen(false)} className={pathname === "/" ? "active" : ""}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/online-mba-course-admission" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-course-admission" ? "active" : ""}>
-                Online MBA
-              </Link>
-            </li>
-            <li>
-              <Link href="/online-mba-programs-for-working-professionals" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-programs-for-working-professionals" ? "active" : ""}>
-                online-mba-programs-for-working-professionals
-              </Link>
-            </li>
-            <li>
-              <Link href="/online-mba-course-from-top-indian-colleges" onClick={() => setSidebarOpen(false)} className={pathname === "/online-mba-course-from-top-indian-colleges" ? "active" : ""}>
-                Top Universities
-              </Link>
-            </li>
-          </ul>
-          <button
-            className="button-87"
-            style={{ margin: "30px 20px" }}
-            onClick={() => {
-              handlePop();
-              toggleMenu();
-            }}
-          >
-            Speak to Advisor
-          </button>
-        </div>
+      <div className={`repMenu-content ${sidebarOpen ? "show" : ""}`}>
+        <TbX
+          className="respMenu-icon"
+          style={{ position: "absolute", top: "20px", right: "20px" }}
+          onClick={() => setSidebarOpen(false)}
+        />
+        <ul>
+          <li>
+            <Link
+              href="/"
+              onClick={() => setSidebarOpen(false)}
+              className={pathname === "/" ? "active" : ""}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/online-mba-course-admission"
+              onClick={() => setSidebarOpen(false)}
+              className={
+                pathname === "/online-mba-course-admission" ? "active" : ""
+              }
+            >
+              Online MBA
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/online-mba-programs-for-working-professionals"
+              onClick={() => setSidebarOpen(false)}
+              className={
+                pathname === "/online-mba-programs-for-working-professionals"
+                  ? "active"
+                  : ""
+              }
+            >
+              Programs
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/online-mba-course-from-top-indian-colleges"
+              onClick={() => setSidebarOpen(false)}
+              className={
+                pathname === "/online-mba-course-from-top-indian-colleges"
+                  ? "active"
+                  : ""
+              }
+            >
+              Top Universities
+            </Link>
+          </li>
+        </ul>
+        <button
+          className="button-87"
+          style={{ margin: "30px 20px" }}
+          onClick={() => {
+            handlePop();
+            toggleMenu();
+          }}
+        >
+          Speak to Advisor
+        </button>
+      </div>
     </div>
   );
 };
