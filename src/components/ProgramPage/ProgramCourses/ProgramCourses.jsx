@@ -8,7 +8,7 @@ const ProgramCourses = () => {
       title: "MBA (General Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/mba-general-management",
+      link: "/onine-mba-course-in-general-management",
     },
     {
       id: 2,

@@ -35,7 +35,7 @@ const NEWS_QUERY = `*[_type == "news" && slug.current == $slug][0]{
 }`;
 
 const MBA_COURSE_QUERY = `*[_type == "mbaCourse" && slug.current == $slug][0]{
-  _id, title, slug, overview, metaTitle, metaDescription,
+  _id, title, slug, body1, body2, metaTitle, metaDescription,
   mainImage { asset->{ url } },
   youtubeVideoUrl,
   customTable { title, headers, rows[] { cells } }
@@ -107,11 +107,8 @@ export default async function SlugPage({
   const isNews = !!news;
   const isMBACourse = !!mbaCourse;
 
-  // Body content
-  const body = isService
-    ? content?.body1 || content?.body2
-    : content?.body || content?.overview || [];
-  // const videoIndex = 2;
+  // For non-Service / non-MBA pages
+  const body = !isService && !isMBACourse ? content?.body || [] : [];
 
   return (
     <div className={isNews || isPost ? "blog-container" : "main-container"}>
@@ -141,24 +138,31 @@ export default async function SlugPage({
           </b>
         )}
 
-        {/* Main body */}
-        <div
-          className={isNews || isPost ? "blogHead-content" : "head-container"}
-        >
-          {Array.isArray(body) &&
-            body.map((block, index) => (
-              <React.Fragment key={`block-${index}`}>
-                <PortableText
-                  value={block}
-                  components={portableTextComponents}
-                />
-              </React.Fragment>
-            ))}
-        </div>
+        {/* Main body for blogs/news */}
+        {Array.isArray(body) && body.length > 0 && (
+          <div
+            className={isNews || isPost ? "blogHead-content" : "head-container"}
+          >
+            <PortableText value={body} components={portableTextComponents} />
+          </div>
+        )}
 
-        {/* Service specific */}
+        {/* Service-specific */}
         {isService && (
           <>
+            {/* Body 1 */}
+            {Array.isArray(content.body1) && (
+              <div className="slugContent-wrapper">
+                <div className="slugContent-container">
+                  <PortableText
+                    value={content.body1}
+                    components={portableTextComponents}
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* Video + extra components */}
             <div className="head-container">
               {youtubeUrl && (
                 <div className="youtube-container">
@@ -175,11 +179,12 @@ export default async function SlugPage({
                   />
                 </div>
               )}
-                <HomeSpecialization />
-                <UniversitiesMarquee />
-                <HomeWhyMain />
+              <HomeSpecialization />
+              <UniversitiesMarquee />
+              <HomeWhyMain />
             </div>
 
+            {/* Body 2 + Table */}
             {Array.isArray(content.body2) && (
               <div className="slugContent-wrapper">
                 <div className="slugContent-container">
@@ -222,25 +227,21 @@ export default async function SlugPage({
           </>
         )}
 
-        {/* MBA Course specific */}
+        {/* ✅ MBA Course-specific (cleaned, no repetition) */}
         {isMBACourse && (
           <>
-            {youtubeUrl && (
-              <div className="youtube-container">
-                <iframe
-                  src={`https://www.youtube.com/embed/${
-                    youtubeUrl.includes("youtu.be")
-                      ? youtubeUrl.split("/").pop()?.split("?")[0]
-                      : youtubeUrl.split("v=")[1]
-                  }`}
-                  title={content.title || "YouTube Video"}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+            {/* Body 1 */}
+            {Array.isArray(content.body1) && (
+              <div className="slugContent-wrapper">
+                <div className="slugContent-container">
+                  <PortableText
+                    value={content.body1}
+                    components={portableTextComponents}
+                  />
+                </div>
               </div>
             )}
-
+            {/* Table */}
             {content.customTable && (
               <div className="custom-table">
                 {content.customTable.title && (
@@ -270,12 +271,41 @@ export default async function SlugPage({
                 </table>
               </div>
             )}
-          <HomeSpecialization />
-          <UniversitiesMarquee />
-          <HomeWhyMain />
+            {/* YouTube + Home sections */}
+            <div className="head-container">
+              {youtubeUrl && (
+                <div className="youtube-container">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${
+                      youtubeUrl.includes("youtu.be")
+                        ? youtubeUrl.split("/").pop()?.split("?")[0]
+                        : youtubeUrl.split("v=")[1]
+                    }`}
+                    title={content.title || "YouTube Video"}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+              )}
+              <HomeSpecialization />
+              <UniversitiesMarquee />
+              <HomeWhyMain />
+            </div>
+
+            {/* Body 2 */}
+            {Array.isArray(content.body2) && (
+              <div className="slugContent-wrapper">
+                <div className="slugContent-container">
+                  <PortableText
+                    value={content.body2}
+                    components={portableTextComponents}
+                  />
+                </div>
+              </div>
+            )}
           </>
         )}
-
       </div>
 
       {/* Sidebar for blog/news */}

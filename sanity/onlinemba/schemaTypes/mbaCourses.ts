@@ -1,69 +1,77 @@
-// schemas/mbaCourse.ts
-import {defineType} from 'sanity'
+import { defineType } from "sanity";
 
 export default defineType({
-  name: 'mbaCourse',
-  title: 'MBA Course',
-  type: 'document',
+  name: "mbaCourse",
+  title: "MBA Course",
+  type: "document",
   fields: [
     {
-      name: 'title',
-      title: 'Course Title',
-      type: 'string',
+      name: "title",
+      title: "Course Title",
+      type: "string",
     },
     {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title', maxLength: 96},
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      options: { source: "title", maxLength: 96 },
     },
     {
-      name: 'metaTitle',
-      title: 'Meta Title',
-      type: 'string',
+      name: "metaTitle",
+      title: "Meta Title",
+      type: "string",
     },
     {
-      name: 'metaDescription',
-      title: 'Meta Description',
-      type: 'text',
+      name: "metaDescription",
+      title: "Meta Description",
+      type: "text",
     },
     {
-      name: 'mainImage',
-      title: 'Main Image',
-      type: 'image',
-      options: {hotspot: true},
+      name: "mainImage",
+      title: "Main Image",
+      type: "image",
+      options: { hotspot: true },
     },
+
     {
-      name: 'overview',
-      title: 'Course Overview',
-      type: 'array',
-      of: [{type: 'block'}],
+      name: "body1",
+      title: "Body 1",
+      type: "array",
+      of: [{ type: "block" }],
     },
+
     {
-      name: 'customTable',
-      title: 'Course Structure (Table)',
-      type: 'object',
+      name: "body2",
+      title: "Body 2",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+
+    {
+      name: "customTable",
+      title: "Course Structure (Table)",
+      type: "object",
       fields: [
-        {name: 'title', title: 'Table Title', type: 'string'},
+        { name: "title", title: "Table Title", type: "string" },
         {
-          name: 'headers',
-          title: 'Headers',
-          type: 'array',
-          of: [{type: 'string'}],
+          name: "headers",
+          title: "Headers",
+          type: "array",
+          of: [{ type: "string" }],
         },
         {
-          name: 'rows',
-          title: 'Rows',
-          type: 'array',
+          name: "rows",
+          title: "Rows",
+          type: "array",
           of: [
             {
-              type: 'object',
+              type: "object",
               fields: [
                 {
-                  name: 'cells',
-                  title: 'Cells',
-                  type: 'array',
-                  of: [{type: 'string'}],
+                  name: "cells",
+                  title: "Cells",
+                  type: "array",
+                  of: [{ type: "string" }],
                 },
               ],
             },
@@ -72,9 +80,9 @@ export default defineType({
       ],
     },
     {
-      name: 'youtubeVideoUrl',
-      title: 'YouTube Video URL',
-      type: 'url',
+      name: "youtubeVideoUrl",
+      title: "YouTube Video URL",
+      type: "url",
     },
   ],
-})
+});
