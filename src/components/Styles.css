@@ -398,18 +398,111 @@
     padding: 10px;
   }
 }
-.readMoreBtn {
-  background: var(--customColor);
-  border: none;
-  padding: 8px 16px;
-  margin-top: 12px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 6px;
-  transition: 0.3s ease;
+
+.portableImg {
+  width: 100%;
+  height: 600px;
+  padding: 20px;
 }
 
-.readMoreBtn:hover {
-  opacity: 0.9;
+.portableImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-accordion {
+  margin: 20px 0;
+}
+
+/* Accordion Wrapper */
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  width: 100%;
+  background-color: var(--neutralColor);
+}
+
+/* Accordion Header */
+.accordion-title {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  background: var(--accentColor1);
+  color: #222;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+  user-select: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  list-style: none;
+}
+.accordion-title > h3 {
+  color: white;
+}
+.accordion-title:hover {
+  background: var(--accentColor1);
+}
+
+/* Add + / - icon automatically */
+.accordion-title::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #666;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+/* When accordion is open */
+.accordion-item[open] .accordion-title::after {
+  content: "−";
+  color: var(--accentColor1);
+}
+
+/* Accordion Content */
+.accordion-content {
+  padding: 20px;
+  color: black;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  background: #fff;
+  transition: all 0.35s ease;
+  opacity: 0;
+  overflow-x: scroll;
+  height: 100%;
+}
+.accordion-content > p {
+  font-size: 18px;
+  text-align: justify;
+  width: 100%;
+}
+.accordion-content > p > strong {
+  color: var(--accentColor1);
+}
+.accordion-content > p > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--accentColor1);
+}
+/* Animate open content */
+.accordion-item[open] .accordion-content {
+  opacity: 1;
+  padding-top: 0.75rem;
+}
+
+/* Optional – subtle border highlight when open */
+.accordion-item[open] {
+  border-color: var(--accentColor1);
+  box-shadow: 0 2px 8px var(--neutralColor);
 }

@@ -32,6 +32,7 @@ export default defineType({
       title: 'Body1',
       type: 'blockContent',
     }),
+    
     defineField({
       name: 'body2',
       title: 'Body2',

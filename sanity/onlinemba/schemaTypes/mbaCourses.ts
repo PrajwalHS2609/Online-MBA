@@ -1,86 +1,106 @@
-import {defineType} from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'mbaCourse',
   title: 'MBA Course',
   type: 'document',
-  fields: [
-    {
-      name: 'title',
-      title: 'Course Title',
-      type: 'string',
-    },
-    {
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {source: 'title', maxLength: 96},
-    },
-    {
-      name: 'metaTitle',
-      title: 'Meta Title',
-      type: 'string',
-    },
-    {
-      name: 'metaDescription',
-      title: 'Meta Description',
-      type: 'text',
-    },
-    {
-      name: 'mainImage',
-      title: 'Main Image',
-      type: 'image',
-      options: {hotspot: true},
-    },
-
-    {
-      name: 'body1',
-      title: 'Body 1',
-      type: 'blockContent',
-    },
-
-    {
-      name: 'body2',
-      title: 'Body 2',
-      type: 'blockContent',
-    },
-
-    {
-      name: 'customTable',
-      title: 'Course Structure (Table)',
-      type: 'object',
-      fields: [
-        {name: 'title', title: 'Table Title', type: 'string'},
-        {
-          name: 'headers',
-          title: 'Headers',
-          type: 'array',
-          of: [{type: 'string'}],
-        },
-        {
-          name: 'rows',
-          title: 'Rows',
-          type: 'array',
-          of: [
-            {
-              type: 'object',
-              fields: [
-                {
-                  name: 'cells',
-                  title: 'Cells',
-                  type: 'array',
-                  of: [{type: 'string'}],
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      name: 'youtubeVideoUrl',
-      title: 'YouTube Video URL',
-      type: 'url',
-    },
-  ],
-})
+ fields: [
+     defineField({
+       name: 'title',
+       title: 'Title',
+       type: 'string',
+     }),
+     defineField({
+       name: 'mainImage',
+       title: 'Main image',
+       type: 'image',
+       options: {
+         hotspot: true,
+       },
+     }),
+     defineField({
+       name: 'slug',
+       title: 'Slug',
+       type: 'slug',
+       options: {
+         source: 'title',
+         maxLength: 96,
+       },
+     }),
+     defineField({
+       name: 'body1',
+       title: 'Body1',
+       type: 'blockContent',
+     }),
+     defineField({
+       name: 'body2',
+       title: 'Body2',
+       type: 'blockContent',
+     }),
+ 
+     // ✅ Custom Table Field
+     defineField({
+       name: 'customTable',
+       title: 'Custom Table',
+       type: 'object',
+       fields: [
+         {
+           name: 'title',
+           title: 'Table Title',
+           type: 'string',
+         },
+         {
+           name: 'headers',
+           title: 'Table Headers',
+           type: 'array',
+           of: [{type: 'string'}],
+         },
+         {
+           name: 'rows',
+           title: 'Table Rows',
+           type: 'array',
+           of: [
+             {
+               type: 'object',
+               name: 'tableRow',
+               title: 'Row',
+               fields: [
+                 {
+                   name: 'cells',
+                   title: 'Cells',
+                   type: 'array',
+                   of: [{type: 'string'}],
+                 },
+               ],
+             },
+           ],
+         },
+       ],
+     }),
+ 
+     defineField({
+       name: 'metaTitle',
+       title: 'Meta Title',
+       type: 'string',
+     }),
+     defineField({
+       name: 'metaDescription',
+       title: 'Meta Description',
+       type: 'text',
+     }),
+     defineField({
+       name: 'youtubeVideoUrl',
+       title: 'YouTube Video URL',
+       type: 'url',
+     }),
+     defineField({
+       name: 'faqs',
+       title: 'FAQs',
+       type: 'array',
+       of: [{type: 'reference', to: [{type: 'faq'}]}],
+       options: {
+         layout: 'tags', // Optional, will show selected FAQs as tags
+       },
+     }),
+   ],
+ })
