@@ -24,6 +24,15 @@ interface AccordionBlockValue {
   content: PortableTextBlock[]; // ✅ Proper type instead of any[]
 }
 
+interface FAQItem {
+  question: string;
+  answer: PortableTextBlock[];
+}
+interface FAQBlockValue {
+  title?: string;
+  items: FAQItem[];
+}
+
 export const portableTextComponents: PortableTextComponents = {
   types: {
     // 🖼️ Image Renderer
@@ -100,6 +109,31 @@ export const portableTextComponents: PortableTextComponents = {
             />
           </div>
         </details>
+      );
+    },
+
+
+    // ------------------------------FAQ----------------------------------
+    
+    faq: ({ value }: { value: FAQBlockValue }) => {
+      if (!value?.items?.length) return null;
+      return (
+        <div className="faq-section">
+          {value.title && <h2 className="faq-title">{value.title}</h2>}
+          <div className="accordion-items">
+            {value.items.map((item: any, idx: number) => (
+              <details key={idx} className="faq-item">
+                <summary className="faq-question">{item.question}</summary>
+                <div className="faq-answer">
+                  <PortableText
+                    value={item.answer}
+                    components={portableTextComponents}
+                  />
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
       );
     },
   },

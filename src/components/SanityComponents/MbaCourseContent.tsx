@@ -55,9 +55,8 @@ export default function MbaCourseContent({
 
       <div className="head-container">
         <HomeSpecialization />
-                <UniversitiesFees />
-
         <UniversitiesMarquee />
+        <UniversitiesFees />
         <HomeWhyMain />
 
         {youtubeUrl && (

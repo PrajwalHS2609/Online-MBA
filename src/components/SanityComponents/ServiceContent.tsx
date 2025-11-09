@@ -43,18 +43,20 @@ export default function ServiceContent({
       <h1>{content.title}</h1>
 
       {content.body1 && (
-        <div className="head-container">
-          <PortableText
-            value={content.body1}
-            components={portableTextComponents}
-          />
+        <div className="slugContent-wrapper">
+          <div className="head-container">
+            <PortableText
+              value={content.body1}
+              components={portableTextComponents}
+            />
+          </div>
         </div>
       )}
 
       <div className="head-container">
         <HomeSpecialization />
-        <UniversitiesFees />
         <UniversitiesMarquee />
+        <UniversitiesFees />
         <HomeWhyMain />
 
         {youtubeUrl && (
