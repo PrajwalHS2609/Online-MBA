@@ -112,16 +112,16 @@ export const portableTextComponents: PortableTextComponents = {
       );
     },
 
-
     // ------------------------------FAQ----------------------------------
-    
+
     faq: ({ value }: { value: FAQBlockValue }) => {
       if (!value?.items?.length) return null;
+
       return (
         <div className="faq-section">
           {value.title && <h2 className="faq-title">{value.title}</h2>}
           <div className="accordion-items">
-            {value.items.map((item: any, idx: number) => (
+            {value.items.map((item: FAQItem, idx: number) => (
               <details key={idx} className="faq-item">
                 <summary className="faq-question">{item.question}</summary>
                 <div className="faq-answer">
