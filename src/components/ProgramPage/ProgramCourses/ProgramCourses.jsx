@@ -78,7 +78,7 @@ const ProgramCourses = () => {
       title: "MBA (International Business)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/onine-mba-course-in-international-business",
     },
     {
       id: 12,
