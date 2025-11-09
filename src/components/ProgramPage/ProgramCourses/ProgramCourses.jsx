@@ -26,7 +26,7 @@ const ProgramCourses = () => {
     },
     {
       id: 4,
-      title: "MB (HR Management)",
+      title: "MBA (HR Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
       link: "/",
