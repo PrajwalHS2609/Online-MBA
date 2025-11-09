@@ -132,6 +132,9 @@
 .head-container {
   padding: 20px;
 }
+.service-wrapper1>h1{
+  font-size: 40px;
+}
 /* -------------------------------SlugYoutube------------------------------------------------------------ */
 
 .youtube-container {
@@ -278,6 +281,9 @@
 }
 .head-container > h4 {
   color: var(--accentColor1);
+}
+.head-container > p{
+  font-size: 18px;
 }
 .head-container > p > a {
   color: var(--accentColor1);
@@ -505,4 +511,28 @@
 .accordion-item[open] {
   border-color: var(--accentColor1);
   box-shadow: 0 2px 8px var(--neutralColor);
+}
+blockquote {
+  font-weight: bold;
+}
+blockquote > strong {
+  color: var(--customColor);
+}
+blockquote > em {
+  color: var(--customColor);
+}
+.portableImg {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+}
+.portableImg > a {
+  width: 100%;
+  height: 100%;
+}
+.portableImg > a > img {
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+  /* border: solid blue; */
 }

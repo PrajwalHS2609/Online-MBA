@@ -62,6 +62,18 @@ export default defineType({
     defineArrayMember({
       type: 'image',
       options: {hotspot: true},
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        },
+        {
+          name: 'link', // <-- Add this
+          type: 'url',
+          title: 'Link URL',
+        },
+      ],
     }),
     // ✅ Add table support here
     defineArrayMember({

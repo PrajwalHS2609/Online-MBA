@@ -1,3 +1,4 @@
+import UniversitiesFees from "@/components/HomePage/UniversitiesFees/UniversitiesFees";
 import HomeSpecialization from "../../components/HomePage/HomeSpecialization/HomeSpecialization";
 import HomeWhyMain from "../../components/HomePage/HomeWhy/HomeWhyMain";
 import UniversitiesMarquee from "../../components/HomePage/UniversitiesMarquee/UniversitiesMarquee";
@@ -15,6 +16,7 @@ export default function TopUniversities() {
     <div>
       <TopUniversitiesHeader />
       <TopUniversitiesCard/>
+            <UniversitiesFees/>
       <HomeSpecialization />
       <UniversitiesMarquee />
       <HomeWhyMain />

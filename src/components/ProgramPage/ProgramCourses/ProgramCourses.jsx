@@ -22,7 +22,7 @@ const ProgramCourses = () => {
       title: "MBA (Marketing)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-marketing",
     },
     {
       id: 4,
@@ -36,7 +36,7 @@ const ProgramCourses = () => {
       title: "MBA (Information Technology)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-information-technology",
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const ProgramCourses = () => {
       title: "MBA (Supply Chain Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-supply-chain-management",
     },
     {
       id: 8,
@@ -92,7 +92,7 @@ const ProgramCourses = () => {
       title: "MBA (Logistic and Supply Chain )",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-logistics-and-supply-chain",
     },
     {
       id: 14,
@@ -106,7 +106,7 @@ const ProgramCourses = () => {
       title: "MBA (Retail Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-retail-management",
     },
     {
       id: 16,
@@ -120,7 +120,7 @@ const ProgramCourses = () => {
       title: "MBA (Fintech Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-fintech-management ",
     },
     {
       id: 18,

@@ -1,5 +1,4 @@
 import { PortableTextComponents, PortableTextBlock } from "@portabletext/react";
-import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/sanity/client";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
@@ -30,16 +29,30 @@ export const portableTextComponents: PortableTextComponents = {
     // 🖼️ Image Renderer
     image: ({ value }) => {
       if (!value?.asset?._ref) return null;
-      const imageUrl = urlFor(value).width(1400).height(900).url();
+      const imageUrl = urlFor(value).url();
+      const href = value.link || null;
+
       return (
         <div className="portableImg">
-          <Image
-            src={imageUrl}
-            alt={value.alt || "img"}
-            width={1400}
-            height={900}
-            className="rounded-lg object-cover"
-          />
+          {href ? (
+            <a href={href} target="_blank" rel="noopener noreferrer">
+              <img
+                src={imageUrl}
+                alt={value.alt || "img"}
+                width={2000}
+                height={1000}
+                className="rounded-lg object-cover"
+              />
+            </a>
+          ) : (
+            <img
+              src={imageUrl}
+              alt={value.alt || "img"}
+              width={1400}
+              height={900}
+              className="rounded-lg object-cover"
+            />
+          )}
         </div>
       );
     },
@@ -81,7 +94,10 @@ export const portableTextComponents: PortableTextComponents = {
             <h3>{value.title}</h3>
           </summary>
           <div className="accordion-content">
-            <PortableText value={value.content} components={portableTextComponents} />
+            <PortableText
+              value={value.content}
+              components={portableTextComponents}
+            />
           </div>
         </details>
       );

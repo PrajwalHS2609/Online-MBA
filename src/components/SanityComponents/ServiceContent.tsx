@@ -6,6 +6,7 @@ import HomeSpecialization from "../HomePage/HomeSpecialization/HomeSpecializatio
 import UniversitiesMarquee from "../HomePage/UniversitiesMarquee/UniversitiesMarquee";
 import HomeWhyMain from "../HomePage/HomeWhy/HomeWhyMain";
 import ContentHeader from "../ContentHeader/ContentHeader";
+import UniversitiesFees from "../HomePage/UniversitiesFees/UniversitiesFees";
 
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
@@ -52,6 +53,7 @@ export default function ServiceContent({
 
       <div className="head-container">
         <HomeSpecialization />
+        <UniversitiesFees />
         <UniversitiesMarquee />
         <HomeWhyMain />
 
