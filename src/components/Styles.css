@@ -525,6 +525,7 @@ blockquote > em {
   /* border: solid red; */
   width: 100%;
   height: 100%;
+  padding: 20px;
 }
 .portableImg > a {
   width: 100%;
@@ -532,11 +533,18 @@ blockquote > em {
 }
 .portableImg > a > img {
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: contain;
   /* border: solid blue; */
 }
-
+@media screen and (max-width:768px) {
+  .portableImg > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* border: solid blue; */
+}
+}
 /* ---------- FAQ Section ---------- */
 .faq-section {
   margin: 3rem 0;
