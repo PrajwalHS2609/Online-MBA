@@ -15,7 +15,7 @@ const ProgramCourses = () => {
       title: "MBA (Finance)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-finance",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const ProgramCourses = () => {
       title: "MBA (HR Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-hr-management",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ const ProgramCourses = () => {
       title: "MBA (Operation)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-business-operation",
     },
     {
       id: 7,
@@ -57,7 +57,7 @@ const ProgramCourses = () => {
       title: "MBA (Data Analytics)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-data-analytics",
     },
     {
       id: 9,
@@ -71,7 +71,7 @@ const ProgramCourses = () => {
       title: "MBA (Hospitality Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-hospitality-management",
     },
     {
       id: 11,
@@ -134,7 +134,7 @@ const ProgramCourses = () => {
       title: "MBA (Healthcare and Hospital)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-healthcare-management",
     },
     {
       id: 20,
@@ -148,29 +148,29 @@ const ProgramCourses = () => {
       title: "MBA (Marketing and HRM)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-marketing-and-hrm",
     },
     {
       id: 22,
       title: "MBA (Master of Business Administration)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-admission",
     },
-    {
-      id: 23,
-      title: "MBA (Master of Business Administration)",
-      description:
-        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
-    },
-    {
-      id: 24,
-      title: "MBA (Master of Business Administration)",
-      description:
-        "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
-    },
+    // {
+    //   id: 23,
+    //   title: "MBA (Master of Business Administration)",
+    //   description:
+    //     "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+    //   link: "/",
+    // },
+    // {
+    //   id: 24,
+    //   title: "MBA (Master of Business Administration)",
+    //   description:
+    //     "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
+    //   link: "/",
+    // },
   ];
   return (
     <div className="programCourse-container">
