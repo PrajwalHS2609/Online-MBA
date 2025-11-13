@@ -8,6 +8,7 @@ const BlogSidebar = () => {
     <div className="blogSideBar-container">
       <BlogPost />
       <BlogCategories />
+      
     </div>
   );
 };

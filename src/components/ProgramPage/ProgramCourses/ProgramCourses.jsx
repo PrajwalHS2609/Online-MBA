@@ -64,7 +64,7 @@ const ProgramCourses = () => {
       title: "MBA (Business Analytics)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-business-analytics",
     },
     {
       id: 10,
@@ -85,7 +85,7 @@ const ProgramCourses = () => {
       title: "MBA (Project Management)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-project-management",
     },
     {
       id: 13,
@@ -99,7 +99,7 @@ const ProgramCourses = () => {
       title: "MBA (International Finance)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-international-finance",
     },
     {
       id: 15,
@@ -113,7 +113,7 @@ const ProgramCourses = () => {
       title: "MBA (IT and Fintech )",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-it-and-fintech",
     },
     {
       id: 17,
@@ -127,7 +127,7 @@ const ProgramCourses = () => {
       title: "MBA (Data Science and Analytics)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-data-science-and-analytics",
     },
     {
       id: 19,
@@ -141,7 +141,7 @@ const ProgramCourses = () => {
       title: "MBA (Banking and Finance)",
       description:
         "Accelerate your leadership journey with an accredited online MBA. Choose from top specializations like Finance, Marketing,  HR, Analytics, and more.",
-      link: "/",
+      link: "/online-mba-course-in-banking-and-finance",
     },
     {
       id: 21,
