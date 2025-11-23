@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import { PortableText } from "next-sanity";
 import { portableTextComponents } from "@/components/PortableTextComponents";
 import type { PortableTextBlock } from "@portabletext/types";
@@ -7,7 +8,8 @@ import UniversitiesMarquee from "../HomePage/UniversitiesMarquee/UniversitiesMar
 import HomeWhyMain from "../HomePage/HomeWhy/HomeWhyMain";
 import ContentHeader from "../ContentHeader/ContentHeader";
 import UniversitiesFees from "../HomePage/UniversitiesFees/UniversitiesFees";
-
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -15,7 +17,12 @@ export type CustomTable = {
   headers?: string[];
   rows?: { cells: string[] }[];
 };
-
+export type CarouselImage = {
+  asset?: { url?: string };
+  alt?: string;
+  caption?: string;
+  link?: string; // ✅ Added link field
+};
 export type ServiceContentType = {
   _id: string;
   title: string;
@@ -26,6 +33,10 @@ export type ServiceContentType = {
   youtubeVideoUrl?: string;
   faq?: FaqItem[];
   customTable?: CustomTable;
+    carouselBlock?: {
+    title?: string;
+    images?: CarouselImage[];
+  };
 };
 
 export default function ServiceContent({
@@ -35,7 +46,9 @@ export default function ServiceContent({
 }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
+  const [index, setIndex] = useState(0);
 
+  const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="main-container service-wrapper1">
       {imageUrl && <ContentHeader title={content.title} img={imageUrl} />}
@@ -49,6 +62,43 @@ export default function ServiceContent({
               value={content.body1}
               components={portableTextComponents}
             />
+            {/* ✅ Carousel Section */}
+            {content.carouselBlock?.images?.length ? (
+              <Carousel
+                activeIndex={index}
+                onSelect={handleSelect}
+                className="carouselContainer"
+              >
+                {content.carouselBlock.images.map((img, i) => (
+                  <Carousel.Item key={i} className="carouselItem">
+                    {img.link ? (
+                      <a
+                        href={img.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={img.asset?.url}
+                          alt={img.alt || `Slide ${i + 1}`}
+                          className="d-block w-100 rounded"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        src={img.asset?.url}
+                        alt={img.alt || `Slide ${i + 1}`}
+                        className="d-block w-100 rounded"
+                      />
+                    )}
+                    {img.caption && (
+                      <Carousel.Caption>
+                        <h3>{img.caption}</h3>
+                      </Carousel.Caption>
+                    )}
+                  </Carousel.Item>
+                ))}
+              </Carousel>
+            ) : null}
           </div>
         </div>
       )}

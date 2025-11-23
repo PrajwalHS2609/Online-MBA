@@ -660,3 +660,20 @@ details[open] .faq-answer {
     
   }
 }
+.carouselItem {
+  width: 100%;
+}
+.carouselItem > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carouselContainer .carousel-indicators {
+  display: none;
+}
+.carousel-control-next {
+  display: none;
+}
+.carousel-control-prev {
+  display: none;
+}

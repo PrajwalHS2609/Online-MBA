@@ -6,4 +6,15 @@ import faqContent from './faqContent'
 import mbaCourses from './mbaCourses'
 import accordionBlock from './accordionBlock'
 import customTable from './customTable'
-export const schemaTypes = [post, blockContent, serviceContent,blogCategory,customTable,faqContent,mbaCourses,accordionBlock]
+import carouselBlock from './carouselBlock'
+export const schemaTypes = [
+  post,
+  blockContent,
+  serviceContent,
+  blogCategory,
+  customTable,
+  faqContent,
+  mbaCourses,
+  accordionBlock,
+  carouselBlock,
+]

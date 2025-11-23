@@ -1,9 +1,12 @@
+"use client"
 import { PortableText, PortableTextBlock } from "next-sanity";
 import Image from "next/image";
 import { portableTextComponents } from "../PortableTextComponents";
 import "@/components/Styles.css";
 import BlogSidebar from "../BlogPage/BlogSidebar/BlogSidebar";
-
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type PostContentType = {
@@ -14,10 +17,23 @@ export type PostContentType = {
   mainImage?: { asset?: { url?: string } };
   youtubeVideoUrl?: string;
   faq?: FaqItem[];
+    carouselBlock?: {
+    title?: string;
+    images?: CarouselImage[];
+  };
+};
+export type CarouselImage = {
+  asset?: { url?: string };
+  alt?: string;
+  caption?: string;
+  link?: string; // ✅ Added link field
 };
 export default function PostContent({ content }: { content: PostContentType }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
+    const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
     <div className="blog-container">
       <div className="blog-wrapper1">
@@ -27,6 +43,39 @@ export default function PostContent({ content }: { content: PostContentType }) {
 
         <div className="blogHead-content">
           <h1>{content.title}</h1>
+           {/* ✅ Carousel Section */}
+        {content.carouselBlock?.images?.length ? (
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            className="carouselContainer"
+          >
+            {content.carouselBlock.images.map((img, i) => (
+              <Carousel.Item key={i} className="carouselItem">
+                {img.link ? (
+                  <a href={img.link} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={img.asset?.url}
+                      alt={img.alt || `Slide ${i + 1}`}
+                      className="d-block w-100 rounded"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={img.asset?.url}
+                    alt={img.alt || `Slide ${i + 1}`}
+                    className="d-block w-100 rounded"
+                  />
+                )}
+                {img.caption && (
+                  <Carousel.Caption>
+                    <h3>{img.caption}</h3>
+                  </Carousel.Caption>
+                )}
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        ) : null}
           <PortableText
             value={content.body}
             components={portableTextComponents}
