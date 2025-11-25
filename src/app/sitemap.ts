@@ -20,7 +20,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const baseUrl =
       process.env.VERCEL && process.env.VERCEL_ENV === "production"
-        ? "https://prizmaacademy.com/"
+        ? "https://onlinembaadmission.co.in/"
         : process.env.VERCEL_URL
           ? `https://${process.env.VERCEL_URL}`
           : "http://localhost:3000";
@@ -35,8 +35,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const staticUrls = [
       "/",
 
-      "/courses",
-
       "/online-mba-course-admission",
 
       "/online-mba-course-from-top-indian-colleges",
@@ -44,12 +42,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       "/online-mba-programs-for-working-professionals",
 
       "/lp-online-mba",
-
-      "/about-us",
-
-      "/blog",
-
-      "/contact-us",
 
       "/other-services",
     ].map((path) => ({
