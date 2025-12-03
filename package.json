@@ -24,6 +24,7 @@
     "react-multi-carousel": "^1.0.15",
     "sanity": "^4.9.0",
     "styled-components": "^6.1.19",
+    "sweetalert2": "^11.26.3",
     "swiper": "^12.0.1"
   },
   "devDependencies": {

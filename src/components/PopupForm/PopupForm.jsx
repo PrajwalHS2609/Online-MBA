@@ -2,11 +2,49 @@
 import React from "react";
 import "./PopupForm.css";
 import { HiMiniXMark } from "react-icons/hi2";
+import Swal from "sweetalert2";
 
 const PopupForm = () => {
   const handleExit = () => {
     document.querySelector(".popup-container").style.display = "none";
   };
+    const onSubmit = async (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Your enquiry has been submitted successfully.",
+        icon: "success",
+        timer: 3000, // auto-close after 3 sec
+        showConfirmButton: false,
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };  
   return (
     <div className="popup-container">
       <div className="popup-wrapper">
@@ -24,12 +62,12 @@ const PopupForm = () => {
             <HiMiniXMark className="popup-exitIcon" onClick={handleExit} />
           </div>
           <h2>Get in Touch</h2>
-          <form className="popup-form">
-            <input type="text" placeholder="Full Name" required />
-            <input type="tel" placeholder="Phone Number" required />
-            <input type="email" placeholder="Email Address" required />
+          <form className="popup-form" onSubmit={onSubmit}>
+            <input type="text" placeholder="Full Name" name="name"required />
+            <input type="tel" placeholder="Phone Number" name="phone"required />
+            <input type="email" placeholder="Email Address" name="email"required />
 
-            <select name="" id="" required>
+            <select name="course" id="" required>
               <option value="">Select Course</option>
               <option value="MBA (General Management)">
                 MBA (General Management)
@@ -49,7 +87,7 @@ const PopupForm = () => {
               </option>
             </select>
 
-            <textarea placeholder="Your Message" rows="4"></textarea>
+            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
 
             <button type="submit">Submit</button>
           </form>
