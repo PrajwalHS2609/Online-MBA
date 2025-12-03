@@ -14,7 +14,7 @@ const PopupForm = () => {
     const formData = new FormData(form);
 
     // ✅ Add your Web3Forms access key
-    formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
+    formData.append("access_key", "c724e1f7-4c15-425b-af5e-470524fd7581");
 
     const object = Object.fromEntries(formData.entries());
     const json = JSON.stringify(object);
@@ -31,10 +31,9 @@ const PopupForm = () => {
     if (res.success) {
       Swal.fire({
         title: "Success!",
-        text: "Your enquiry has been submitted successfully.",
+        text: "Mail Sent successfully",
         icon: "success",
-        timer: 3000, // auto-close after 3 sec
-        showConfirmButton: false,
+        confirmButtonText: "OK",
       });
       form.reset();
     } else {
