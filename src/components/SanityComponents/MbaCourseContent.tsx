@@ -8,8 +8,8 @@ import UniversitiesMarquee from "../HomePage/UniversitiesMarquee/UniversitiesMar
 import HomeWhyMain from "../HomePage/HomeWhy/HomeWhyMain";
 import ContentHeader from "../ContentHeader/ContentHeader";
 import UniversitiesFees from "../HomePage/UniversitiesFees/UniversitiesFees";
-// import Carousel from "react-bootstrap/Carousel";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -55,38 +55,7 @@ export default function MbaCourseContent({
 
       <h1>{content.title}</h1>
       {/* ✅ Carousel Section */}
-      {/* {content.carouselBlock?.images?.length ? (
-        <Carousel
-          activeIndex={index}
-          onSelect={handleSelect}
-          className="carouselContainer"
-        >
-          {content.carouselBlock.images.map((img, i) => (
-            <Carousel.Item key={i} className="carouselItem">
-              {img.link ? (
-                <a href={img.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={img.asset?.url}
-                    alt={img.alt || `Slide ${i + 1}`}
-                    className="d-block w-100 rounded"
-                  />
-                </a>
-              ) : (
-                <img
-                  src={img.asset?.url}
-                  alt={img.alt || `Slide ${i + 1}`}
-                  className="d-block w-100 rounded"
-                />
-              )}
-              {img.caption && (
-                <Carousel.Caption>
-                  <h3>{img.caption}</h3>
-                </Carousel.Caption>
-              )}
-            </Carousel.Item>
-          ))}
-        </Carousel>
-      ) : null} */}
+      z
       {content.body1 && (
         <div className="slugContent-wrapper">
           <div className="slugContent-container">
