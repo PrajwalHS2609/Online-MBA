@@ -55,7 +55,7 @@ export default function MbaCourseContent({
 
       <h1>{content.title}</h1>
       {/* ✅ Carousel Section */}
-      {content.carouselBlock?.images?.length ? (
+      {/* {content.carouselBlock?.images?.length ? (
         <Carousel
           activeIndex={index}
           onSelect={handleSelect}
@@ -86,7 +86,7 @@ export default function MbaCourseContent({
             </Carousel.Item>
           ))}
         </Carousel>
-      ) : null}
+      ) : null} */}
       {content.body1 && (
         <div className="slugContent-wrapper">
           <div className="slugContent-container">
