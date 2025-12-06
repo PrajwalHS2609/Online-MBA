@@ -8,8 +8,8 @@ import UniversitiesMarquee from "../HomePage/UniversitiesMarquee/UniversitiesMar
 import HomeWhyMain from "../HomePage/HomeWhy/HomeWhyMain";
 import ContentHeader from "../ContentHeader/ContentHeader";
 import UniversitiesFees from "../HomePage/UniversitiesFees/UniversitiesFees";
-import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import Carousel from "react-bootstrap/Carousel";
+// import "bootstrap/dist/css/bootstrap.min.css";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
