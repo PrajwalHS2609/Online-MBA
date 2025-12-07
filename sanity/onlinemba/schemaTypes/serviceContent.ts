@@ -32,7 +32,7 @@ export default defineType({
       title: 'Body1',
       type: 'blockContent',
     }),
-    
+
     defineField({
       name: 'body2',
       title: 'Body2',
@@ -102,6 +102,24 @@ export default defineType({
       options: {
         layout: 'tags', // Optional, will show selected FAQs as tags
       },
+    }),
+    defineField({
+      name: 'tableOfContent',
+      title: 'Table Of Content',
+      type: 'array',
+      of: [
+        {
+          type: 'object',
+          name: 'tocItem',
+          fields: [
+            {
+              name: 'title',
+              title: 'Section Title',
+              type: 'string',
+            },
+          ],
+        },
+      ],
     }),
   ],
 })

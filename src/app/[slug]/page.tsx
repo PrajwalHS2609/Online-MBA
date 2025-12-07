@@ -2,9 +2,15 @@ import React from "react";
 import { notFound } from "next/navigation";
 import { client } from "@/sanity/client";
 
-import PostContent, { PostContentType } from "@/components/SanityComponents/Post";
-import ServiceContent, { ServiceContentType } from "@/components/SanityComponents/ServiceContent";
-import MbaCourseContent, { MbaCourseContentType } from "@/components/SanityComponents/MbaCourseContent";
+import PostContent, {
+  PostContentType,
+} from "@/components/SanityComponents/Post";
+import ServiceContent, {
+  ServiceContentType,
+} from "@/components/SanityComponents/ServiceContent";
+import MbaCourseContent, {
+  MbaCourseContentType,
+} from "@/components/SanityComponents/MbaCourseContent";
 
 // =========================
 // GROQ QUERIES
@@ -29,12 +35,16 @@ const SERVICE_QUERY = `{
     mainImage{ asset->{url} },
     youtubeVideoUrl,
     faq[]{ question, answer },
+   tableOfContent[]{
+      title
+    },
     customTable{ title, headers, rows[]{ cells } }
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{
     title,
     images[]{ alt, caption, link, asset->{ url } }
-  }
+  },
+
 }`;
 
 const MBA_QUERY = `{
@@ -43,6 +53,10 @@ const MBA_QUERY = `{
     mainImage{ asset->{url} },
     youtubeVideoUrl,
     faq[]{ question, answer },
+    
+    tableOfContent[]{
+      title
+    },
     customTable{ title, headers, rows[]{ cells } }
   },
   "carouselBlock": *[_type == "carouselBlock"][0]{

@@ -135,6 +135,14 @@
 .service-wrapper1 > h1 {
   font-size: 40px;
 }
+.mbaCourse-head {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  color: var(--accentColor1);
+}
 /* -------------------------------SlugYoutube------------------------------------------------------------ */
 
 .youtube-container {
@@ -164,7 +172,14 @@
     height: 100%;
   }
 }
-
+.service-heading {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  color: var(--accentColor1);
+}
 /* ----------------------------------------Slug Table------------------------------------------------ */
 /* Custom table styling */
 .custom-table {
@@ -300,7 +315,7 @@
 }
 /* ------------------------------slugContent---------------------------------------- */
 .slugContent-wrapper {
-  padding: 0 70px;
+  padding: 0 20px;
 }
 .slugContent-container {
   width: 100%;
@@ -352,7 +367,7 @@
   color: var(--accentColor1);
   text-align: center;
 }
-.slugContent-container > h2::after {
+/* .slugContent-container > h2::after {
   content: "";
   position: absolute;
   display: flex;
@@ -361,7 +376,7 @@
   border: 2px solid var(--accentColor1);
   width: 50%;
   right: -20px;
-}
+} */
 
 .slugContent-container > h4 {
   text-align: start;
@@ -537,13 +552,13 @@ blockquote > em {
   object-fit: contain;
   /* border: solid blue; */
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .portableImg > a > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* border: solid blue; */
-}
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: solid blue; */
+  }
 }
 /* ---------- FAQ Section ---------- */
 .faq-section {
@@ -552,7 +567,7 @@ blockquote > em {
   background: var(--customBg1);
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  width: 60%;
+  width: 80%;
 }
 
 .faq-title {
@@ -588,6 +603,7 @@ blockquote > em {
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 .faq-item:hover {
@@ -657,7 +673,6 @@ details[open] .faq-answer {
 
   .faq-question {
     font-size: 1rem;
-    
   }
 }
 .carouselItem {
@@ -676,4 +691,306 @@ details[open] .faq-answer {
 }
 .carousel-control-prev {
   display: none;
+}
+
+/* ------------------------Divider-------------------------- */
+.componentDivider-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.componentDivider-content:nth-child(1) {
+  /* border: solid red; */
+  width: 75%;
+  height: 100%;
+  padding: 20px;
+}
+.componentDivider-content:nth-child(2) {
+  /* border: solid green; */
+  width: 25%;
+  padding: 20px;
+  position: sticky;
+  top: 120px;
+  left: 0;
+}
+.componentDivider-item {
+  /* border: solid brown; */
+}
+/* ------------------------------MBA Course---------------------------------------- */
+.mbaCourse-wrapper {
+  padding: 0 20px;
+}
+.mbaCourse-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 5px var(--customColor);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.mbaCourse-container > p {
+  font-size: 18px;
+  text-align: start;
+  width: 100%;
+}
+/* .mbaCourse-container > p > strong {
+  color: var(--customColor);
+} */
+.mbaCourse-container > p > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--accentColor1);
+}
+
+.mbaCourse-container > h1 {
+  position: relative;
+  color: var(--accentColor1);
+  text-align: center;
+}
+.mbaCourse-container > h1 > span {
+  color: var(--accentColor1);
+}
+/* .mbaCourse-container > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--customColor2);
+  width: 50%;
+  left: 20%;
+} */
+.mbaCourse-container > h2 {
+  position: relative;
+  color: var(--accentColor1);
+  text-align: center;
+}
+.mbaCourse-container > h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--accentColor1);
+  width: 50%;
+  right: -20px;
+}
+
+.mbaCourse-container > h4 {
+  text-align: start;
+  color: var(--accentColor1);
+  width: 100%;
+}
+.mbaCourse-container > strong {
+  text-align: start;
+  color: var(--accentColor1);
+  width: 100%;
+}
+.mbaCourse-container > p {
+  text-align: justify;
+}
+.mbaCourse-container > p > strong {
+  color: var(--accentColor1);
+}
+.mbaCourse-container > h3 {
+  color: var(--accentColor1);
+  text-align: start;
+  width: 100%;
+}
+.mbaCourse-container > ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mbaCourse-container > ul > li {
+  margin: 20px;
+  font-size: 18px;
+  text-align: start;
+  width: fit-content;
+}
+.mbaCourse-container > ul > li > strong {
+  color: var(--accentColor1);
+}
+@media screen and (max-width: 768px) {
+  .mbaCourse-wrapper,
+  .mbaCourse-container {
+    padding: 10px;
+  }
+}
+
+/* -----------------------------------MBA Heading--------------------------------------------- */
+.mba-wrapper1 > p:nth-child(odd) {
+  background-color: var(--customLightColor);
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  position: relative;
+}
+.mba-wrapper1 > p {
+  font-size: 18px;
+  text-align: justify;
+  padding: 20px;
+}
+.mba-wrapper1 > p > a {
+  text-decoration: none;
+  color: var(--accentColor1);
+}
+.mba-wrapper1 > h1 {
+  position: relative;
+  color: var(--accentColor1);
+  text-align: center;
+  margin-top: 20px;
+}
+.mba-wrapper1 > h1 > span {
+  color: var(--accentColor1);
+}
+/* .mba-wrapper1 > h1::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--accentColor1);
+  width: 50%;
+  left: 20%;
+} */
+.mba-wrapper1 > h2 {
+  position: relative;
+  color: var(--accentColor1);
+  text-align: center;
+}
+
+/* -------------------------------------------Table Of Content------------------------------------ */
+
+.tableOfContent-container {
+  border: dotted var(--accentColor1);
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--customBg1);
+}
+.tableOfContent-container > h3 {
+  color: var(--accentColor1);
+}
+.tableOfContent-container > ul {
+  margin: 0;
+  padding: 0;
+}
+.tableOfContent-container > ul > li {
+  margin-top: 20px;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: default;
+}
+/* --------------------------------------Mba SideBar--------------------------- */
+.componentDivider-formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.componentDivider-formContent {
+  width: 100%;
+  max-width: 550px;
+  background: var(--customBg1); /* light background */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease;
+}
+
+.componentDivider-formContent h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+.componentDivider-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.componentDivider-form input,
+.componentDivider-form select,
+.componentDivider-form textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: #fafafa;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.componentDivider-form input:focus,
+.componentDivider-form select:focus,
+.componentDivider-form textarea:focus {
+  border-color: #4b70f5;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(75, 112, 245, 0.15);
+}
+
+.componentDivider-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.componentDivider-form button {
+  padding: 14px;
+  background: var(--accentColor1);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s ease;
+}
+
+.componentDivider-form button:hover {
+  background: var(--neutralColor);
+  color: var(--accentColor1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .componentDivider-container {
+    flex-direction: column;
+  }
+  .componentDivider-content:nth-child(1) {
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .componentDivider-content:nth-child(2) {
+    /* border: solid green; */
+    width: 100%;
+    padding: 20px;
+    position: sticky;
+    top: 120px;
+    left: 0;
+  }
 }
