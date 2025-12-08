@@ -10,6 +10,7 @@ import ContentHeader from "../ContentHeader/ContentHeader";
 import UniversitiesFees from "../HomePage/UniversitiesFees/UniversitiesFees";
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Swal from "sweetalert2";
 export type FaqItem = { question: string; answer: PortableTextBlock[] };
 
 export type CustomTable = {
@@ -43,6 +44,42 @@ export type ServiceContentType = {
   tableOfContent?: TableContentItem[];
 };
 
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    // ✅ Add your Web3Forms access key
+    formData.append("access_key", "8e8187ed-fc3e-4bd8-b553-0755da89ab07");
+
+    const object = Object.fromEntries(formData.entries());
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Mail Sent successfully",
+        icon: "success",
+        confirmButtonText: "OK",
+      });
+      form.reset();
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Something went wrong. Please try again later.",
+        icon: "error",
+      });
+    }
+  };  
 export default function ServiceContent({
   content,
 }: {
@@ -190,7 +227,7 @@ export default function ServiceContent({
             <div className="componentDivider-formContainer">
               <div className="componentDivider-formContent">
                 <h2>Get in Touch</h2>
-                <form className="componentDivider-form">
+                <form className="componentDivider-form"  onSubmit={onSubmit}>
                   <input
                     type="text"
                     placeholder="Full Name"
