@@ -14,7 +14,7 @@ const ContentHeader = (props) => {
   };
   return (
     <div className="contentHeader-container">
-      <img src={props.img} alt={props.title} />
+      <Image src={props.img} alt={props.title} />
       <div className="contentHeader-cover">
         <div className="contentHeader-content">
           <h2>{props.title}</h2>

@@ -54,6 +54,19 @@ const FooterLinks = () => {
           Top Universities
         </Link>
       </li>
+      <li>
+        {" "}
+        <Link
+          href="/blog"
+          className={
+            pathname === "/blog"
+              ? "active"
+              : ""
+          }
+        >
+          Blog
+        </Link>
+      </li>
     </div>
   );
 };

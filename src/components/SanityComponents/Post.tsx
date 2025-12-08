@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { PortableText, PortableTextBlock } from "next-sanity";
 import Image from "next/image";
 import { portableTextComponents } from "../PortableTextComponents";
@@ -16,8 +16,9 @@ export type PostContentType = {
   body: PortableTextBlock[];
   mainImage?: { asset?: { url?: string } };
   youtubeVideoUrl?: string;
+  publishedAt?: string;
   faq?: FaqItem[];
-    carouselBlock?: {
+  carouselBlock?: {
     title?: string;
     images?: CarouselImage[];
   };
@@ -31,7 +32,7 @@ export type CarouselImage = {
 export default function PostContent({ content }: { content: PostContentType }) {
   const imageUrl = content?.mainImage?.asset?.url;
   const youtubeUrl = content?.youtubeVideoUrl;
-    const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
   return (
@@ -43,39 +44,53 @@ export default function PostContent({ content }: { content: PostContentType }) {
 
         <div className="blogHead-content">
           <h1>{content.title}</h1>
-           {/* ✅ Carousel Section */}
-        {content.carouselBlock?.images?.length ? (
-          <Carousel
-            activeIndex={index}
-            onSelect={handleSelect}
-            className="carouselContainer"
-          >
-            {content.carouselBlock.images.map((img, i) => (
-              <Carousel.Item key={i} className="carouselItem">
-                {img.link ? (
-                  <a href={img.link} target="_blank" rel="noopener noreferrer">
+          {content.publishedAt && (
+            <p className="postPublished-date">
+              📅{" "}
+              {new Date(content.publishedAt).toLocaleDateString("en-IN", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+          )}
+          {/* ✅ Carousel Section */}
+          {content.carouselBlock?.images?.length ? (
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              className="carouselContainer"
+            >
+              {content.carouselBlock.images.map((img, i) => (
+                <Carousel.Item key={i} className="carouselItem">
+                  {img.link ? (
+                    <a
+                      href={img.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={img.asset?.url}
+                        alt={img.alt || `Slide ${i + 1}`}
+                        className="d-block w-100 rounded"
+                      />
+                    </a>
+                  ) : (
                     <img
                       src={img.asset?.url}
                       alt={img.alt || `Slide ${i + 1}`}
                       className="d-block w-100 rounded"
                     />
-                  </a>
-                ) : (
-                  <img
-                    src={img.asset?.url}
-                    alt={img.alt || `Slide ${i + 1}`}
-                    className="d-block w-100 rounded"
-                  />
-                )}
-                {img.caption && (
-                  <Carousel.Caption>
-                    <h3>{img.caption}</h3>
-                  </Carousel.Caption>
-                )}
-              </Carousel.Item>
-            ))}
-          </Carousel>
-        ) : null}
+                  )}
+                  {img.caption && (
+                    <Carousel.Caption>
+                      <h3>{img.caption}</h3>
+                    </Carousel.Caption>
+                  )}
+                </Carousel.Item>
+              ))}
+            </Carousel>
+          ) : null}
           <PortableText
             value={content.body}
             components={portableTextComponents}
@@ -99,7 +114,7 @@ export default function PostContent({ content }: { content: PostContentType }) {
             />
           </div>
         )}
-{/* 
+        {/* 
         {Array.isArray(content?.faq) && content.faq.length > 0 && (
           <FaqComponent faqs={content.faq} />
         )} */}

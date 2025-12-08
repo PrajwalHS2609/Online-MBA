@@ -20,6 +20,7 @@ const POST_QUERY = `{
   "post": *[_type == "post" && slug.current == $slug][0]{
     _id, title, slug, body,
     mainImage{ asset->{url} },
+    publishedAt,
     youtubeVideoUrl,
     faq[]{ question, answer }
   },

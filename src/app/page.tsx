@@ -8,7 +8,7 @@ import HomeWhyMain from "./../components/HomePage/HomeWhy/HomeWhyMain";
 import HomeContent from "./../components/HomePage/HomeContent";
 import HomePartner from "./../components/HomePage/HomePartner/HomePartner";
 import UniversitiesFees from './../components/HomePage/UniversitiesFees/UniversitiesFees';
-
+import BlogPage from "@/components/BlogPage/BlogPage"
 export const metadata = {
   title:"Online MBA Course from India’s Top University at Affordable Fees",
   description:
@@ -28,7 +28,9 @@ export default function Homepage() {
       <UniversitiesFees/>
       <HomeTestimonial />
       <HomePartner />
+      <BlogPage/>
       <HomeContent />
+      
     </div>
   );
 }
