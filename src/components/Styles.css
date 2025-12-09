@@ -1422,7 +1422,7 @@ details[open] .faq-answer {
   padding: 10px !important;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 20px;
   margin: 10px;
@@ -2146,7 +2146,7 @@ details[open] .faq-answer {
   margin: 1.5rem 0;
   font-style: italic;
   background-color: var(--customBg1);
-  padding: 10px;
+  padding: 15px 10px;
   border-radius: 10px;
 }
 
@@ -2170,49 +2170,21 @@ details[open] .faq-answer {
 /* ----------------------------------Highlight----------------------------------- */
 
 .highlight-box {
-  padding: 20px;
-  border-radius: 14px;
-  margin: 24px 0;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  animation: gradientMove 6s ease infinite;
-  background: linear-gradient(
-    120deg,
-    var(--accentColor1),
-    #ff7c49,
-    #ffb347,
-    var(--accentColor1)
-  );
-  background-size: 300% 300%;
-  box-shadow: 0 0 20px var(--accentColor1),
-              0 0 40px rgba(255, 140, 60, 0.3);
+  background: #fffbf6;
+  border: 4px dotted var(--accentColor1);
+  margin: 20px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  padding-top: 15px;
 }
-
-/* Glowing running gradient animation */
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-    box-shadow: 0 0 10px var(--accentColor1);
-  }
-  50% {
-    background-position: 100% 50%;
-    box-shadow: 0 0 30px #ff9c55;
-  }
-  100% {
-    background-position: 0% 50%;
-    box-shadow: 0 0 10px var(--accentColor1);
-  }
-}
-
 .highlight-title {
+  margin-bottom: 8px;
   font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
 }
-
-.highlight-content {
+.highlight-content > p {
   font-size: 16px;
-  line-height: 1.6;
 }
-

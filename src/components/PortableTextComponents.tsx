@@ -163,7 +163,7 @@ export const portableTextComponents: PortableTextComponents = {
     highlightBlock: ({ value }) => {
       return (
         <div className="highlight-box">
-          {value.title && <h3 className="highlight-title">{value.title}</h3>}
+          {value.title && <h5 className="highlight-title">{value.title}</h5>}
           <div className="highlight-content">
             <PortableText
               value={value.content}
