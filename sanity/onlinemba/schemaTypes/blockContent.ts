@@ -86,5 +86,7 @@ export default defineType({
     defineArrayMember({
       type: 'faq',
     }),
+    defineArrayMember({type: 'quoteBlock'}),
+    defineArrayMember({type: 'highlightBlock'}),
   ],
 })

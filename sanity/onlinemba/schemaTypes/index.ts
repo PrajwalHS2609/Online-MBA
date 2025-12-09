@@ -7,6 +7,8 @@ import mbaCourses from './mbaCourses'
 import accordionBlock from './accordionBlock'
 import customTable from './customTable'
 import carouselBlock from './carouselBlock'
+import quoteContent from './quoteContent'
+import highlightBlock from './highlightBlock'
 export const schemaTypes = [
   post,
   blockContent,
@@ -17,4 +19,6 @@ export const schemaTypes = [
   mbaCourses,
   accordionBlock,
   carouselBlock,
+  quoteContent,
+  highlightBlock,
 ]

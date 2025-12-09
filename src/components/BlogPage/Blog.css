@@ -1,0 +1,7 @@
+.blogPage-heading > h2 {
+  font-weight: normal;
+  font-size: 40px;
+}
+.blogPage-heading > h2 > span {
+  color: var(--accentColor1);
+}

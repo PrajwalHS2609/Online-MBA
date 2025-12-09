@@ -22,7 +22,7 @@ const Footer = () => {
         <FooterAddress />
       </div>
       <div className="belowFooter">
-        <li>Copyright © 2025 OnlineMBA</li>
+        <li>Copyright © 2025 R18Education</li>
         <li onClick={handleScrollTop}>
           <FaArrowUp className="belowFooterIco"/>
         </li>

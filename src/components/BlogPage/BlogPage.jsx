@@ -1,10 +1,10 @@
-"use client"
 import React from "react";
 import "./../Styles.css";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-import { client } from '@/sanity/client';
+import { client } from "@/sanity/client";
 import Image from "next/image";
+import "./Blog.css"
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
@@ -22,8 +22,8 @@ const POSTS_QUERY = `*[
     }
   }`;
 export default async function BlogPage() {
-    const posts = await client.fetch(POSTS_QUERY);
-  
+  const posts = await client.fetch(POSTS_QUERY);
+
   // const card = [
   //   {
   //     id: 1,
@@ -46,22 +46,12 @@ export default async function BlogPage() {
   // ];
   return (
     <div className="blogPage-container">
-      {/* <div className="blogPage-content">
-        <div className="blogPage-heading">
-          <h6>Our Blog</h6>
-          <h2>
-            Read Our Latest <span>Blog</span>
-          </h2>
-        </div>
-        <div className="blogPage-heading">
-          <Link href="/">
-            {" "}
-            <button>
-              View All Blog <FaArrowRight className="blogPage-HeadingIcon" />
-            </button>
-          </Link>
-        </div>
-      </div> */}
+      <div className="blogPage-heading">
+        <h2>
+          Read Our Latest <span>Blog</span>
+        </h2>
+      </div>
+
       <div className="blogPage-content">
         {posts.map((post) => (
           <div className="blogPage-Card" key={post._id}>

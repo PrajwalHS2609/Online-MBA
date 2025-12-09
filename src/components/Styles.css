@@ -536,7 +536,7 @@ blockquote > strong {
 blockquote > em {
   color: var(--customColor);
 }
-.postPublished-date{
+.postPublished-date {
   color: var(--accentColor1);
 }
 .portableImg {
@@ -2138,3 +2138,81 @@ details[open] .faq-answer {
     align-items: center;
   }
 }
+
+/* ---------------------------QuoteBlock----------------------------- */
+.quote-block {
+  border-left: 4px solid var(--accentColor1);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  background-color: var(--customBg1);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--customColor1);
+}
+
+.quote-author {
+  display: block;
+  margin-top: 0.5rem;
+  text-align: right;
+  color: #666;
+  font-weight: bold;
+}
+.quote-text > span {
+  font-size: 30px;
+}
+
+/* ----------------------------------Highlight----------------------------------- */
+
+.highlight-box {
+  padding: 20px;
+  border-radius: 14px;
+  margin: 24px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation: gradientMove 6s ease infinite;
+  background: linear-gradient(
+    120deg,
+    var(--accentColor1),
+    #ff7c49,
+    #ffb347,
+    var(--accentColor1)
+  );
+  background-size: 300% 300%;
+  box-shadow: 0 0 20px var(--accentColor1),
+              0 0 40px rgba(255, 140, 60, 0.3);
+}
+
+/* Glowing running gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 10px var(--accentColor1);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 0 30px #ff9c55;
+  }
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0 0 10px var(--accentColor1);
+  }
+}
+
+.highlight-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.highlight-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
