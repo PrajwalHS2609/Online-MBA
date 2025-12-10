@@ -1,7 +1,7 @@
 import "./globals.css";
 import Navbar from "./../components/Navbar/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import "@/components/Styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./../components/Footer/Footer";
 import PopupForm from "./../components/PopupForm/PopupForm";

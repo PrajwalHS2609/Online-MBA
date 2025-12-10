@@ -1116,7 +1116,6 @@ details[open] .faq-answer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  position: relative;
 }
 .blogPage-wrapper > h3 {
   text-align: center;
@@ -1143,16 +1142,7 @@ details[open] .faq-answer {
 .blogPage-ReadIcon {
   color: grey;
 }
-.blogPage-item {
-  /* border: solid yellow; */
-  width: 90%;
-  height: 50px;
-  padding: 10px;
-  position: absolute;
-  top: -60px;
-  border-radius: 10px;
-  background-color: white;
-}
+
 @media screen and (max-width: 768px) {
   .blogPage-container {
     /* border: solid red; */

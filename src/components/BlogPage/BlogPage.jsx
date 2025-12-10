@@ -66,15 +66,11 @@ export default async function BlogPage() {
                 />
               )}{" "}
             </div>
-            {/* <div className="blogPage-wrapper">
-            <div className="blogPage-item"></div>
-          </div> */}
-
             <div className="blogPage-wrapper">
               <h3>{post.title}</h3>
             </div>
             <div className="blogPage-wrapper">
-              <Link href={`${post.slug.current}`}>
+              <Link href={`/${post.slug.current}`}>
                 READ MORE <FaArrowRight className="blogPage-ReadIcon" />
               </Link>
             </div>
