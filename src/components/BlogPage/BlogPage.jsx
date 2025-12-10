@@ -1,5 +1,4 @@
 import React from "react";
-import "./../Styles.css";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { client } from "@/sanity/client";
