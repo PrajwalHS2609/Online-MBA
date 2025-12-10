@@ -1,8 +1,5 @@
-"use client"
-
 import React from "react";
 import { client } from "@/sanity/client";
-import { SanityDocument } from "next-sanity";
 import Link from "next/link";
 import "./BlogSidebar.css"
 

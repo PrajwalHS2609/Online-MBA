@@ -302,6 +302,7 @@
 }
 .head-container > p > a {
   color: var(--accentColor1);
+  text-decoration: none;
 }
 .head-container > p > strong {
   color: var(--accentColor1);
@@ -716,9 +717,7 @@ details[open] .faq-answer {
   top: 120px;
   left: 0;
 }
-.componentDivider-item {
-  /* border: solid brown; */
-}
+
 /* ------------------------------MBA Course---------------------------------------- */
 .mbaCourse-wrapper {
   padding: 0 20px;
@@ -1128,6 +1127,7 @@ details[open] .faq-answer {
 
 .blogPage-wrapper > a {
   text-decoration: none;
+  color: grey;
 }
 .blogPage-wrapper > a > button {
   border: none;
@@ -1185,8 +1185,12 @@ details[open] .faq-answer {
     justify-content: space-between;
     gap: 10px;
   }
+  .blogPage-content:nth-child(2) {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 /* ----------------------------BlogSlug----------------------------------- */
 
 .blogPageContainer {
@@ -1439,7 +1443,7 @@ details[open] .faq-answer {
   font-weight: bold;
 }
 .blogHead-content > h3 {
-  color: var(--customColor);
+  color: var(--accentColor1);
   text-align: start;
   width: 100%;
   font-weight: bold;
@@ -2070,6 +2074,7 @@ details[open] .faq-answer {
   font-weight: bold;
   letter-spacing: 2px;
 }
+
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .blogMainContainer {
     /* border: solid red; */

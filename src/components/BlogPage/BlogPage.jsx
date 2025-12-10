@@ -4,7 +4,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { client } from "@/sanity/client";
 import Image from "next/image";
-import "./Blog.css"
+import "./Blog.css";
 
 const POSTS_QUERY = `*[
     _type == "post" && defined(slug.current)
@@ -74,11 +74,8 @@ export default async function BlogPage() {
               <h3>{post.title}</h3>
             </div>
             <div className="blogPage-wrapper">
-              <Link href={`/${post.slug.current}`}>
-                {" "}
-                <button>
-                  READ MORE <FaArrowRight className="blogPage-ReadIcon" />
-                </button>
+              <Link href={`${post.slug.current}`}>
+                READ MORE <FaArrowRight className="blogPage-ReadIcon" />
               </Link>
             </div>
           </div>

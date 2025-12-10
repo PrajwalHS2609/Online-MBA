@@ -4,7 +4,8 @@ import { client } from "@/sanity/client";
 import { SanityImageSource } from "@sanity/image-url/lib/types/types";
 import { PortableText } from "@portabletext/react";
 import "@/components/Styles.css";
-
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.min.css";
 const builder = imageUrlBuilder(client);
 function urlFor(source: SanityImageSource) {
   return builder.image(source);
@@ -39,6 +40,19 @@ interface QuoteBlockValue {
 export interface ContentHighlight {
   title: string;
   description?: string;
+}
+interface CarouselImage {
+  _type: "image";
+  asset: {
+    _ref: string;
+  };
+  alt?: string;
+  caption?: string;
+  link?: string;
+}
+interface CarouselBlockValue {
+  title?: string;
+  images: CarouselImage[];
 }
 export const portableTextComponents: PortableTextComponents = {
   types: {
@@ -171,6 +185,48 @@ export const portableTextComponents: PortableTextComponents = {
             />
           </div>
         </div>
+      );
+    },
+
+    // ----------------------------Carousel--------------------------------
+    carouselBlock: ({ value }: { value: CarouselBlockValue }) => {
+      if (!value?.images?.length) return null;
+
+      return (
+        <Carousel className="carouselContainer" interval={3000}>
+          {value.images.map((img: CarouselImage, i: number) => {
+            // ✅ Build URL with Sanity's image URL builder
+            const imageUrl = img.asset?._ref ? urlFor(img.asset).url() : null;
+
+            if (!imageUrl) return null;
+
+            const ImageElement = (
+              <img
+                src={imageUrl}
+                alt={img.alt || `Slide ${i + 1}`}
+                className="d-block w-100 rounded"
+              />
+            );
+
+            return (
+              <Carousel.Item key={i} className="carouselItem">
+                {img.link ? (
+                  <a href={img.link} target="_blank" rel="noopener noreferrer">
+                    {ImageElement}
+                  </a>
+                ) : (
+                  ImageElement
+                )}
+
+                {img.caption && (
+                  <Carousel.Caption>
+                    <h3>{img.caption}</h3>
+                  </Carousel.Caption>
+                )}
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
       );
     },
   },

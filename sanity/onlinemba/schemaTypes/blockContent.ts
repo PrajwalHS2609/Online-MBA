@@ -88,5 +88,6 @@ export default defineType({
     }),
     defineArrayMember({type: 'quoteBlock'}),
     defineArrayMember({type: 'highlightBlock'}),
+    defineArrayMember({type: 'carouselBlock'}),
   ],
 })
