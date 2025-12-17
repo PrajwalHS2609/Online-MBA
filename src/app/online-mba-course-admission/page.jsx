@@ -14,9 +14,11 @@ export const metadata = {
   title: "2025 Online MBA Course Admission | Online MBA Course at Lowest Fees",
   description:
     "Apply for 2025 Online MBA Course Admission! Enhance your career with flexible learning, expert faculty, and globally recognized business management skills.",
-  canonical: "https://onlinembaadmission.co.in/online-mba-course-admission",
-  keywords: [],
+  alternates: {
+    canonical: "https://onlinembaadmission.co.in/online-mba-course-admission",
+  },
 };
+
 export default function OnlineMba() {
   return (
     <div>

@@ -5,18 +5,20 @@ import UniversitiesMarquee from "../../components/HomePage/UniversitiesMarquee/U
 import TopUniversitiesCard from "../../components/TopUniversities/TopUniversitiesCard/TopUniversitiesCard";
 import TopUniversitiesHeader from "../../components/TopUniversities/TopUniversitiesHeader/TopUniversitiesHeader";
 export const metadata = {
-  title:"Online MBA Course Admission from Top Indian Colleges ",
+  title: "Online MBA Course Admission from Top Indian Colleges ",
   description:
     "Apply for Online MBA Course Admission from Top Indian Colleges — flexible, affordable, and designed for professionals aiming for career growth.",
-  canonical: "https://onlinembaadmission.co.in/online-mba-course-from-top-indian-colleges",
-  keywords: [],
-}
+  alternates: {
+    canonical:
+      "https://onlinembaadmission.co.in/online-mba-course-from-top-indian-colleges",
+  },
+};
 export default function TopUniversities() {
   return (
     <div>
       <TopUniversitiesHeader />
-      <TopUniversitiesCard/>
-            <UniversitiesFees/>
+      <TopUniversitiesCard />
+      <UniversitiesFees />
       <HomeSpecialization />
       <UniversitiesMarquee />
       <HomeWhyMain />
