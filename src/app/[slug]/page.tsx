@@ -11,6 +11,7 @@ import ServiceContent, {
 import MbaCourseContent, {
   MbaCourseContentType,
 } from "@/components/SanityComponents/MbaCourseContent";
+import BlogSidebar from "@/components/BlogPage/BlogSidebar/BlogSidebar";
 
 // =========================
 // GROQ QUERIES
@@ -105,12 +106,17 @@ export default async function SlugPage({
 
   if (postData.post) {
     return (
-      <PostContent
-        content={{
-          ...postData.post,
-          carouselBlock: postData.carouselBlock ?? undefined,
-        }}
-      />
+          <div className="blog-container">
+        <PostContent
+          content={{
+            ...postData.post,
+            carouselBlock: postData.carouselBlock ?? undefined,
+          }}
+        />
+        <div className="blog-wrapper2">
+          <BlogSidebar />
+        </div>
+      </div>
     );
   }
 
