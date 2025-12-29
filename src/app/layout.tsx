@@ -5,8 +5,6 @@ import "@/components/Styles.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./../components/Footer/Footer";
 import PopupForm from "./../components/PopupForm/PopupForm";
-import SnowFall from './../components/Christmas/SnowFall/SnowFall';
-import SantaClause from './../components/Christmas/SantaClause/SantaClause';
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -31,8 +29,6 @@ export default function RootLayout({
           flexDirection: "column",
         }}
       >
-        <SnowFall/>
-        <SantaClause/>
         <Navbar />
         {children}
         <PopupForm />
