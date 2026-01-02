@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopUniversitiesCard.css"
+import "./TopUniversitiesCard.css";
 import Image from "next/image";
 import manipal from "@/Images/UniversitiesImg/manipal.jpg";
 import vit from "@/Images/UniversitiesImg/vit.png";
@@ -8,11 +8,46 @@ import amity from "@/Images/UniversitiesImg/amity.jpg";
 import nims from "@/Images/UniversitiesImg/nims.jpg";
 const TopUniversitiesCard = () => {
   const card = [
-    { id: 1, img: vit, title: "VIT" },
-    { id: 2, img: jain, title: "Jain University" },
-    { id: 3, img: amity, title: "Amity University" },
-    { id: 4, img: nims, title: "NMIMS University" },
-    { id: 5, img: manipal, title: "Mainpal university" },
+    {
+      id: 1,
+      img: vit,
+      title: "VIT",
+      reviews: "6021+",
+      rating: "4.3",
+      opted: "51,740",
+    },
+    {
+      id: 2,
+      img: jain,
+      title: "Jain University",
+      reviews: "2,794+",
+      rating: "4.0",
+      opted: "21,650",
+    },
+    {
+      id: 3,
+      img: amity,
+      title: "Amity University",
+      reviews: "1000+",
+      rating: "4.1",
+      opted: "10,000",
+    },
+    {
+      id: 4,
+      img: nims,
+      title: "NMIMS University",
+      reviews: "2962+",
+      rating: "4.0",
+      opted: "8,326",
+    },
+    {
+      id: 5,
+      img: manipal,
+      title: "Mainpal university",
+      reviews: "2,230+",
+      rating: "4.5",
+      opted: "24,500",
+    },
   ];
   return (
     <div className="universities-container">
@@ -36,8 +71,8 @@ const TopUniversitiesCard = () => {
                 <div className="uni-stat">
                   <span className="stat-icon">⭐</span>
                   <span className="stat-label">Rating:</span>
-                  <span className="stat-value">4.2 / 5</span>
-                  <span className="stat-extra">(120 reviews)</span>
+                  <span className="stat-value">{x.rating} / 5</span>
+                  <span className="stat-extra">({x.reviews})</span>
                 </div>
 
                 <div className="uni-stat">
@@ -50,7 +85,7 @@ const TopUniversitiesCard = () => {
                 <div className="uni-stat">
                   <span className="stat-icon">📌</span>
                   <span className="stat-label">Opted:</span>
-                  <span className="stat-value">1790+</span>
+                  <span className="stat-value">{x.opted}</span>
                   <span className="stat-extra">last month</span>
                 </div>
               </div>

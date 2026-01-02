@@ -1,0 +1,206 @@
+.vitHeader-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.vitHeader-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vitHeader-cover {
+  /* border: solid green; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.47);
+  padding: 20px;
+}
+.vitHeader-content {
+  /* border: solid blue; */
+  width: 45%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.vitHeader-content:nth-child(2) {
+  /* border: solid blue; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.vitHeader-content > h6 {
+  color: var(--accentColor1);
+  font-size: 22px;
+  font-weight: bold;
+}
+.vitHeader-content > h2 {
+  color: var(--customColor2);
+  font-size: 50px;
+}
+.vitHeader-content > p {
+  color: white;
+  font-size: 20px;
+}
+.vitHeader-content > ul {
+  margin: 0;
+  padding: 0;
+  /* border: solid yellow; */
+}
+.vitHeader-content > ul > li {
+  border: solid white;
+  list-style: none;
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+.vitHeader-content > ul > li > img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+.vitHeader-btnContainer {
+  /* border: solid red; */
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+/* .vitHeader-btnContainer > button {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: var(--accentColor1);
+  border: none;
+  color: white;
+  width: 200px;
+  font-weight: bold;
+  &:hover {
+    background-color: #ffac1d;
+  }
+} */
+.vitHeader-btnContainer > a > button {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border: solid 2px var(--accentColor1);
+  color: white;
+  width: 200px;
+  font-weight: bold;
+  transition: 1s ease;
+  &:hover {
+    border: solid 2px var(--accentColor1);
+    background: linear-gradient(45deg, #ff512f 0%, #f09819 51%, #ff512f 100%);
+  }
+}
+.button-87 {
+  margin: 10px;
+  padding: 15px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-87:active {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 768px) {
+  .vitHeader-container {
+    /* border: solid red; */
+    width: 100%;
+    height: 100%;
+    background-color: var(--customColor1);
+  }
+  .vitHeader-cover {
+    /* border: solid green; */
+    position: static;
+    flex-direction: column;
+  }
+  .vitHeader-content {
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+  }
+  .vitHeader-content > h6 {
+    color: var(--accentColor1);
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .vitHeader-content > h2 {
+    color: var(--customColor2);
+    font-size: 30px;
+    text-align: center;
+  }
+  .vitHeader-content > p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+  .vitHeader-content:nth-child(2) {
+    /* border: solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .vitHeader-content > ul {
+    margin: 0;
+    padding: 0;
+    /* border: solid yellow; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .vitHeader-btnContainer {
+    /* border: solid red; */
+    flex-direction: column;
+    gap: 20px;
+  }
+}
