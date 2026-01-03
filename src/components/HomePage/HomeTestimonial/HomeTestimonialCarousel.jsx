@@ -53,7 +53,7 @@ const HomeTestimonialCarousel = () => {
             expertise, quick responses, and personalized support helped me
             secure admission without any hassle. I truly appreciate their
             dedication to helping students achieve their goals. If you’re
-            planning for 2025 admissions, R18 is the right choice!
+            planning for 2026 admissions, R18 is the right choice!
           </p>
           <h3>Manish Verma</h3>
         </Carousel.Item>
@@ -81,7 +81,7 @@ const HomeTestimonialCarousel = () => {
             details clearly but also helped me choose the right specialization.
             Their timely updates and expert advice made everything easy. I’m
             grateful for their guidance and highly recommend them to anyone
-            planning for 2025 admissions.
+            planning for 2026 admissions.
           </p>
           <h3>Ashish Singh</h3>
         </Carousel.Item>

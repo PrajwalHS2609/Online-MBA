@@ -11,9 +11,9 @@ import OnlineMbaEligibility from "../../components/OnlineMba/OnlineMbaEligibilit
 import OnlineMbaWhy from "../../components/OnlineMba/OnlineMbaWhy/OnlineMbaWhy";
 import UniversitiesFees from "@/components/HomePage/UniversitiesFees/UniversitiesFees";
 export const metadata = {
-  title: "2025 Online MBA Course Admission | Online MBA Course at Lowest Fees",
+  title: "2026 Online MBA Course Admission | Online MBA Course at Lowest Fees",
   description:
-    "Apply for 2025 Online MBA Course Admission! Enhance your career with flexible learning, expert faculty, and globally recognized business management skills.",
+    "Apply for 2026 Online MBA Course Admission! Enhance your career with flexible learning, expert faculty, and globally recognized business management skills.",
   alternates: {
     canonical: "https://onlinembaadmission.co.in/online-mba-course-admission",
   },

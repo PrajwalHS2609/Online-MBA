@@ -19,7 +19,7 @@ const FooterBio = () => {
         universities. Gain global business insights, executive skills, and
         career growth – all with flexible online learning.
       </p>
-      {/* <a href="mailto:info@prizmaacademy.com">info@prizmaacademy.com</a> */}
+      {/* <a href="mailto:indiaonlinemba@gmail.com">indiaonlinemba@gmail.com</a> */}
       {/* <div className="footerBioSocial">
         <a href="https://www.facebook.com/PrizmaAcademyfb">
           {" "}

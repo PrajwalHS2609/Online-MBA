@@ -30,7 +30,7 @@ const FooterAddress = () => {
       </li>
       <li>
         <FaEnvelopeOpenText className="addressIco" />
-        <a href="mailto:info@prizmaacademy.com">info@prizmaacademy.com</a>
+        <a href="mailto:indiaonlinemba@gmail.com">indiaonlinemba@gmail.com</a>
       </li>
 
       <div className="footerBioSocial">

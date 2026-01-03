@@ -28,8 +28,11 @@ const HomeContent = () => {
           commitments.
         </p>
         <p>
-          Institutions offering <a href="">online MBA programs in India</a> have
-          meticulously structured their curricula to combine theoretical
+          Institutions offering{" "}
+          <a href="https://onlinembaadmission.co.in/online-mba-course-admission">
+            online MBA programs in India
+          </a>{" "}
+          have meticulously structured their curricula to combine theoretical
           frameworks with practical applications. This integration ensures that
           students not only understand core business principles but also develop
           skills applicable to real-world corporate scenarios. Among the leading
@@ -41,9 +44,12 @@ const HomeContent = () => {
         </p>
         <p>
           A significant advantage of online MBA programs lies in their
-          flexibility. <a href="">The online MBA course in Bangalore</a>, for
-          instance, allows professionals in India’s IT and corporate hub to
-          balance occupational responsibilities while pursuing advanced
+          flexibility.{" "}
+          <a href="https://onlinembaadmission.co.in/online-mba-course-admission">
+            The online MBA course in Bangalore
+          </a>
+          , for instance, allows professionals in India’s IT and corporate hub
+          to balance occupational responsibilities while pursuing advanced
           education. Such flexibility is invaluable for those who wish to
           continue gaining work experience while simultaneously enhancing their
           academic qualifications. Furthermore, the availability of asynchronous
@@ -185,13 +191,15 @@ const HomeContent = () => {
               One of the foremost reasons to consider an online MBA is the
               opportunity to pursue high-quality education without compromising
               professional commitments.{" "}
-              <a href="">The online MBA course in Bangalore</a>, for instance,
-              caters to professionals in India’s major business hub, allowing
-              them to integrate work responsibilities with rigorous academic
-              learning. This flexible approach enables students to gain
-              practical experience while simultaneously acquiring theoretical
-              knowledge, thereby enhancing their marketability and career
-              prospects.
+              <a href="https://onlinembaadmission.co.in/online-mba-course-admission">
+                The online MBA course in Bangalore
+              </a>
+              , for instance, caters to professionals in India’s major business
+              hub, allowing them to integrate work responsibilities with
+              rigorous academic learning. This flexible approach enables
+              students to gain practical experience while simultaneously
+              acquiring theoretical knowledge, thereby enhancing their
+              marketability and career prospects.
             </p>
             <p>
               Institutions like Amity University have pioneered Amity Online MBA
@@ -303,11 +311,14 @@ const HomeContent = () => {
               maximize the benefits of their online MBA journey.
             </p>
             <p>
-              Choosing an <a href="">Online MBA Course in India</a> represents a
-              strategic investment in professional growth and career
-              advancement. Programs like Amity Online MBA Courses, Manipal
-              Online MBA Course, and Vellore VIT Online MBA Course offer an
-              ideal blend of academic rigor, practical application, flexible
+              Choosing an{" "}
+              <a href="https://onlinembaadmission.co.in/online-mba-programs-for-working-professionals">
+                Online MBA Course in India
+              </a>{" "}
+              represents a strategic investment in professional growth and
+              career advancement. Programs like Amity Online MBA Courses,
+              Manipal Online MBA Course, and Vellore VIT Online MBA Course offer
+              an ideal blend of academic rigor, practical application, flexible
               learning, and global recognition. Affordable Indian Online MBA
               Course Fees, diverse specializations, and structured guidance from
               institutions such as R18 Education make online MBA programs
@@ -391,10 +402,13 @@ const HomeContent = () => {
 
             <p>
               {" "}
-              The pursuit of an <a href="">Online MBA Course in India</a> is
-              increasingly becoming a preferred choice for professionals aiming
-              to enhance their managerial skills, advance their careers, and
-              gain a competitive edge in the corporate world. One of the
+              The pursuit of an{" "}
+              <a href="https://onlinembaadmission.co.in/online-mba-programs-for-working-professionals">
+                Online MBA Course in India
+              </a>{" "}
+              is increasingly becoming a preferred choice for professionals
+              aiming to enhance their managerial skills, advance their careers,
+              and gain a competitive edge in the corporate world. One of the
               critical factors in choosing an online MBA is the availability of
               specialized programs that align with individual career goals.
               Leading institutions provide a wide array of specializations to
@@ -811,14 +825,16 @@ const HomeContent = () => {
                 Affordability is an important factor for students when choosing
                 an online MBA program. R18 Education provides clear and
                 transparent guidance on{" "}
-                <a href="">Indian Online MBA Course Fees</a>, including tuition,
-                registration, and any additional costs associated with each
-                program. By understanding the financial investment required,
-                students can make informed decisions and plan their education
-                budget effectively. Our team also provides insights into
-                flexible payment options and installment plans offered by
-                universities, ensuring that quality education remains accessible
-                to all.
+                <a href="https://onlinembaadmission.co.in/online-mba-programs-for-working-professionals">
+                  Indian Online MBA Course Fees
+                </a>
+                , including tuition, registration, and any additional costs
+                associated with each program. By understanding the financial
+                investment required, students can make informed decisions and
+                plan their education budget effectively. Our team also provides
+                insights into flexible payment options and installment plans
+                offered by universities, ensuring that quality education remains
+                accessible to all.
               </p>
             </div>
             <div className="courseHead-listContent">
@@ -924,7 +940,9 @@ const HomeContent = () => {
                 degree—it’s a strategic move toward a successful and rewarding
                 career. With R18 Education’s guidance, students can confidently
                 navigate the complex landscape of{" "}
-                <a href="">online MBA programs in India</a>
+                <a href="https://onlinembaadmission.co.in/online-mba-course-from-top-indian-colleges">
+                  online MBA programs in India
+                </a>
                 and achieve their academic and professional objectives.
               </p>
             </div>

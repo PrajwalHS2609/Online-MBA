@@ -6,13 +6,59 @@ import vit from "@/Images/UniversitiesImg/vit.png";
 import jain from "@/Images/UniversitiesImg/jain.jpg";
 import amity from "@/Images/UniversitiesImg/amity.jpg";
 import nims from "@/Images/UniversitiesImg/nims.jpg";
+import Link from "next/link";
 const OnlineMbaUniversities = () => {
   const card = [
-    { id: 1, img: vit, title: "VIT", price: "1,90,000" },
-    { id: 2, img: jain, title: "Jain University", price: "2,20,000" },
-    { id: 3, img: amity, title: "Amity University", price: "1,80,000" },
-    { id: 4, img: nims, title: "NMIMS University", price: "1,99,000" },
-    { id: 5, img: manipal, title: "Mainpal University", price: "1,75,000" },
+    {
+      id: 1,
+      img: vit,
+      title: "VIT",
+      reviews: "6021+",
+      rating: "4.3",
+      opted: "51,740",
+      fees: "₹1,80,000",
+      link: "/vit-university",
+    },
+    {
+      id: 2,
+      img: jain,
+      title: "Sikkim Manipal University",
+      reviews: "428+",
+      rating: "4.0",
+      opted: "4,263",
+      fees: "",
+      link: "/",
+    },
+    {
+      id: 3,
+      img: amity,
+      title: "Amity University",
+      reviews: "1000+",
+      rating: "4.1",
+      opted: "10,000",
+      fees: "₹1,99,000",
+      link: "/",
+    },
+    {
+      id: 4,
+      img: nims,
+      title: "NMIMS University",
+      reviews: "2962+",
+      rating: "4.0",
+      opted: "8,326",
+      fees: "₹2,20,000",
+      link: "/",
+    },
+    {
+      id: 5,
+      img: manipal,
+      title: "Manipal University",
+      reviews: "2,230+",
+      rating: "4.5",
+      opted: "24,500",
+      fees: "₹1,75,000",
+      link: "/",
+    },
   ];
   return (
     <div className="universities-container">
@@ -31,31 +77,31 @@ const OnlineMbaUniversities = () => {
 
             <div className="universities-cardContent">
               <h3>{x.title}</h3>
-
               <div className="uni-stats">
                 <div className="uni-stat">
                   <span className="stat-icon">⭐</span>
                   <span className="stat-label">Rating:</span>
-                  <span className="stat-value">4.2 / 5</span>
-                  <span className="stat-extra">(120 reviews)</span>
+                  <span className="stat-value">{x.rating} / 5</span>
+                  <span className="stat-extra">({x.reviews})</span>
                 </div>
 
                 <div className="uni-stat">
                   <span className="stat-icon">💰</span>
                   <span className="stat-label">Fees:</span>
-                  <span className="stat-value">₹ {x.price}</span>
+                  <span className="stat-value">{x.fees}</span>
                   <span className="stat-extra">(2 Years)</span>
                 </div>
 
                 <div className="uni-stat">
                   <span className="stat-icon">📌</span>
-                  <span className="stat-label">Opted:</span>
-                  <span className="stat-value">1790+</span>
-                  <span className="stat-extra">last month</span>
+                  <span className="stat-label">admission:</span>
+                  <span className="stat-value">{x.opted}</span>
+                  <span className="stat-extra"></span>
                 </div>
               </div>
-
-              <button className="uni-btn">Know More</button>
+              <Link href={x.link}>
+                <button className="uni-btn">Know More</button>
+              </Link>{" "}
             </div>
           </div>
         ))}

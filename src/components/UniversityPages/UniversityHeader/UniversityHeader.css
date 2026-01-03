@@ -280,3 +280,15 @@
   background: white;
   color: var(--accentColor1);
 }
+@media screen and (max-width:768px) {
+  .form-wrapper {
+    width: 300px;
+ max-width: 420px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  /* border: 3px solid #2746c7; */
+}
+}
