@@ -1,9 +1,15 @@
-import VitHeader from "../../components/UniversityPages/VITPage/VitHeader/VitHeader";
+import UniversityHeader from "../../components/UniversityPages/UniversityHeader/UniversityHeader";
+import VitAbout from "../../components/UniversityPages/VITPage/VitAbout";
+import VitHighlights from "../../components/UniversityPages/VITPage/VitHighlights";
+import VitKey from "../../components/UniversityPages/VITPage/VitKey";
 
 export default function VitPage() {
   return (
     <div>
-      <VitHeader />
+      <UniversityHeader />
+      <VitAbout/>
+      <VitKey/>
+      <VitHighlights/>
     </div>
   );
 }
