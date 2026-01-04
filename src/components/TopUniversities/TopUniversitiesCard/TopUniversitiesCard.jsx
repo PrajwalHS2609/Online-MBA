@@ -15,9 +15,9 @@ const TopUniversitiesCard = () => {
       title: "VIT",
       reviews: "6021+",
       rating: "4.3",
-      opted: "51,740",
+      opted: "51,740+",
       fees: "₹1,80,000",
-      link: "/vit-university",
+      link: "/2026-vit-online-mba-admission-for-working-professionals",
     },
     {
       id: 2,
@@ -25,8 +25,8 @@ const TopUniversitiesCard = () => {
       title: "Sikkim Manipal University",
       reviews: "428+",
       rating: "4.0",
-      opted: "4,263",
-      fees: "",
+      opted: "4,263+",
+      fees: "₹1,10,000",
       link: "/",
     },
     {
@@ -35,7 +35,7 @@ const TopUniversitiesCard = () => {
       title: "Amity University",
       reviews: "1000+",
       rating: "4.1",
-      opted: "10,000",
+      opted: "10,000+",
       fees: "₹1,99,000",
       link: "/",
     },
@@ -45,7 +45,7 @@ const TopUniversitiesCard = () => {
       title: "NMIMS University",
       reviews: "2962+",
       rating: "4.0",
-      opted: "8,326",
+      opted: "8,326+",
       fees: "₹2,20,000",
       link: "/",
     },
@@ -55,7 +55,7 @@ const TopUniversitiesCard = () => {
       title: "Manipal University",
       reviews: "2,230+",
       rating: "4.5",
-      opted: "24,500",
+      opted: "24,500+_",
       fees: "₹1,75,000",
       link: "/",
     },
@@ -90,7 +90,7 @@ const TopUniversitiesCard = () => {
                   <span className="stat-icon">💰</span>
                   <span className="stat-label">Fees:</span>
                   <span className="stat-value">{x.fees}</span>
-                  <span className="stat-extra">(2 Years)</span>
+                  <span className="stat-extra"></span>
                 </div>
 
                 <div className="uni-stat">

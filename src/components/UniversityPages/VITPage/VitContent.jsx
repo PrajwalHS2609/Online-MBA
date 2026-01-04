@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 const VitContent = () => {
-      const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="courseHead">
@@ -12,36 +12,45 @@ const VitContent = () => {
           {" "}
           The demand for flexible, career-focused management education is rising
           rapidly as professionals look to upskill without taking a break from
-          their jobs. The 2026 VIT Online MBA Admission for Working
-          Professionals is designed exactly for this purpose—offering academic
-          excellence, industry relevance, and the flexibility today’s
-          professionals need. Offered by Vellore Institute of Technology, this
-          program has become a preferred choice for aspirants across India,
-          especially those seeking recognized online management education in
-          Tamil Nadu and beyond.
+          their jobs. The{" "}
+          <a href="https://onlinembaadmission.co.in/vit-online-mba-course-in-chennai-2025-complete-guide-for-working-professionals-and-graduates">
+            2026 VIT Online MBA Admission
+          </a>{" "}
+          for Working Professionals is designed exactly for this
+          purpose—offering academic excellence, industry relevance, and the
+          flexibility today’s professionals need. Offered by Vellore Institute
+          of Technology, this program has become a preferred choice for
+          aspirants across India, especially those seeking recognized online
+          management education in Tamil Nadu and beyond.
         </p>
         <p>
           For professionals based in Chennai, Vellore, and other parts of the
-          state, the VIT online MBA Courses in Chennai and the VIT online MBA
-          Course in Vellore provide a strong academic foundation backed by one
-          of India’s most respected private universities. The online format
-          ensures that learners can balance work, family, and education while
-          gaining skills that directly impact career growth. With the Online MBA
-          Admission for 2026, VIT continues to align its curriculum with
-          evolving industry demands, digital transformation, and leadership
-          competencies required in modern organizations.
+          state, the{" "}
+          <a href="https://onlinembaadmission.co.in/2026-vit-online-mba-admission-for-working-professionals">
+            VIT online MBA Courses in Chennai
+          </a>{" "}
+          and the VIT online MBA Course in Vellore provide a strong academic
+          foundation backed by one of India’s most respected private
+          universities. The online format ensures that learners can balance
+          work, family, and education while gaining skills that directly impact
+          career growth. With the Online MBA Admission for 2026, VIT continues
+          to align its curriculum with evolving industry demands, digital
+          transformation, and leadership competencies required in modern
+          organizations.
         </p>
         <p>
-          One of the biggest advantages of the Tamilnadu VIT Online MBA
-          Admission is the program’s suitability for working professionals.
-          Unlike traditional MBA programs that require full-time classroom
-          attendance, this online MBA allows learners to study at their own
-          pace. Recorded lectures, live interactive sessions, digital study
-          materials, and continuous assessments ensure that learning is both
-          comprehensive and convenient. Professionals working in IT,
-          manufacturing, healthcare, finance, education, and startups find this
-          program particularly valuable because it allows immediate application
-          of concepts at work.
+          One of the biggest advantages of the{" "}
+          <a href="https://onlinembaadmission.co.in/2026-vit-online-mba-admission-for-working-professionals">
+            Tamilnadu VIT Online MBA Admission
+          </a>{" "}
+          is the program’s suitability for working professionals. Unlike
+          traditional MBA programs that require full-time classroom attendance,
+          this online MBA allows learners to study at their own pace. Recorded
+          lectures, live interactive sessions, digital study materials, and
+          continuous assessments ensure that learning is both comprehensive and
+          convenient. Professionals working in IT, manufacturing, healthcare,
+          finance, education, and startups find this program particularly
+          valuable because it allows immediate application of concepts at work.
         </p>
         {expanded && (
           <>
@@ -51,9 +60,12 @@ const VitContent = () => {
               even when earned online. The university’s strong academic
               governance, experienced faculty, and structured evaluation methods
               ensure that the learning outcomes of the online MBA are on par
-              with on-campus programs. This makes the VIT online MBA Courses in
-              Chennai and VIT online MBA Course in Vellore attractive options
-              for professionals who want quality education without relocating or
+              with on-campus programs. This makes the{" "}
+              <a href="https://onlinembaadmission.co.in/">
+                VIT online MBA Courses in Chennai
+              </a>{" "}
+              and VIT online MBA Course in Vellore attractive options for
+              professionals who want quality education without relocating or
               leaving their current roles.
             </p>
             <p>
@@ -69,14 +81,17 @@ const VitContent = () => {
               leadership roles.
             </p>
             <p>
-              Flexibility is at the heart of the Tamilnadu VIT Online MBA
-              Admission. The learning management system is accessible 24/7,
-              allowing students to attend lectures, submit assignments, and
-              participate in discussions according to their schedules. This is
-              especially helpful for professionals working in shifts, handling
-              travel, or managing multiple responsibilities. The blend of
-              self-paced learning and scheduled live sessions ensures engagement
-              while respecting time constraints.
+              Flexibility is at the heart of the{" "}
+              <a href="https://onlinembaadmission.co.in/">
+                Tamilnadu VIT Online MBA Admission
+              </a>
+              . The learning management system is accessible 24/7, allowing
+              students to attend lectures, submit assignments, and participate
+              in discussions according to their schedules. This is especially
+              helpful for professionals working in shifts, handling travel, or
+              managing multiple responsibilities. The blend of self-paced
+              learning and scheduled live sessions ensures engagement while
+              respecting time constraints.
             </p>
             <p>
               Affordability is another factor that makes the 2026 VIT Online MBA
@@ -97,9 +112,11 @@ const VitContent = () => {
               benefits from the curriculum. The digital application process,
               online document submission, and clear communication make it easy
               for applicants from Tamil Nadu and across India to apply. The
-              Tamilnadu VIT Online MBA Admission is particularly popular among
-              professionals who want a trusted university brand combined with
-              modern online delivery.
+              <a href="https://onlinembaadmission.co.in/">
+                Tamilnadu VIT Online MBA Admission
+              </a>{" "}
+              is particularly popular among professionals who want a trusted
+              university brand combined with modern online delivery.
             </p>
             <p>
               Career advancement is a central motivation for enrolling in the
@@ -135,14 +152,16 @@ const VitContent = () => {
               possess relevant and updated management knowledge.
             </p>
             <p>
-              Technology-enabled learning is another highlight of the Tamilnadu
-              VIT Online MBA Admission. The digital platform supports
-              interactive tools, recorded sessions, downloadable resources, and
-              performance tracking. This tech-driven approach mirrors the
-              digital transformation happening across industries, making the
-              learning experience relevant and future-ready. For professionals
-              accustomed to digital work environments, this mode of learning
-              feels intuitive and efficient.
+              Technology-enabled learning is another highlight of the{" "}
+              <a href="https://onlinembaadmission.co.in/vit-online-mba-course-in-chennai-2025-complete-guide-for-working-professionals-and-graduates">
+                Tamilnadu VIT Online MBA Admission
+              </a>
+              . The digital platform supports interactive tools, recorded
+              sessions, downloadable resources, and performance tracking. This
+              tech-driven approach mirrors the digital transformation happening
+              across industries, making the learning experience relevant and
+              future-ready. For professionals accustomed to digital work
+              environments, this mode of learning feels intuitive and efficient.
             </p>
             <p>
               Location flexibility is a major advantage for learners in Tamil
@@ -165,12 +184,15 @@ const VitContent = () => {
             </p>
             <p>
               In today’s competitive job market, an MBA from a recognized
-              institution can be a powerful differentiator. The Online MBA
-              Admission for 2026 offered by VIT combines academic credibility,
-              flexibility, and industry relevance—three factors that working
-              professionals prioritize. The program’s structure acknowledges
-              real-world constraints while delivering a robust learning
-              experience that supports career progression.
+              institution can be a powerful differentiator. The{" "}
+              <a href="https://onlinembaadmission.co.in/vit-online-mba-course-in-chennai-2025-complete-guide-for-working-professionals-and-graduates">
+                Online MBA Admission for 2026
+              </a>{" "}
+              offered by VIT combines academic credibility, flexibility, and
+              industry relevance—three factors that working professionals
+              prioritize. The program’s structure acknowledges real-world
+              constraints while delivering a robust learning experience that
+              supports career progression.
             </p>
             <p>
               Choosing the Tamilnadu VIT Online MBA Admission is not just about
@@ -188,9 +210,11 @@ const VitContent = () => {
               Professionals stands out as a smart and future-ready choice.
               Whether exploring VIT online MBA Courses in Chennai, considering
               the VIT online MBA Course in Vellore, or applying through the
-              Tamilnadu VIT Online MBA Admission, this program offers a clear
-              pathway to career advancement without compromising current
-              professional commitments.
+              <a href="https://onlinembaadmission.co.in/2026-vit-online-mba-admission-for-working-professionals">
+                Tamilnadu VIT Online MBA Admission
+              </a>
+              , this program offers a clear pathway to career advancement
+              without compromising current professional commitments.
             </p>
           </>
         )}

@@ -2186,3 +2186,90 @@ details[open] .faq-answer {
 .highlight-content > p {
   font-size: 16px;
 }
+
+/* -----------------------------------------------non sanity Faq------------------------------------- */
+.serviceFaq-container {
+  /* border: solid red; */
+  padding: 50px;
+  background-color: var(--customBg1);
+  margin-top: 30px;
+}
+.serviceFaq-container > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+.serviceFaq-wrapper {
+  /* border: solid blue; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.serviceFaq-content {
+  /* border: solid green; */
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.serviceFaq-content > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+.serviceFaq-content > h2>span{
+  color: var(--accentColor1);
+}
+.serviceFaq-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.serviceFaq-content:nth-child(2) {
+  background-color: var(--lpCustom3);
+  height: 100%;
+  padding: 50px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--customBg) !important;
+  color: black;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.serviceFaq-accItem {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  margin: 10px;
+}
+.serviceFaq-accHeader {
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .serviceFaq-container > h2 {
+    font-size: 30px;
+  }
+  .serviceFaq-container {
+    /* border: solid red; */
+    padding: 10px;
+  }
+  .serviceFaq-wrapper {
+    /* border: solid blue; */
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .serviceFaq-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 10px;
+  }
+  .serviceFaq-content > img {
+    display: none;
+  }
+  .serviceFaq-content:nth-child(2) {
+    background-color: #86a5a8;
+    height: 700px;
+    display: none;
+  }
+}
