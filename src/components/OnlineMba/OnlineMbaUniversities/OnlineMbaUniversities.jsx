@@ -89,7 +89,7 @@ const OnlineMbaUniversities = () => {
                   <span className="stat-icon">💰</span>
                   <span className="stat-label">Fees:</span>
                   <span className="stat-value">{x.fees}</span>
-                  <span className="stat-extra">(2 Years)</span>
+                  <span className="stat-extra"></span>
                 </div>
 
                 <div className="uni-stat">

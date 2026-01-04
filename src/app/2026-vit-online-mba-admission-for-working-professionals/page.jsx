@@ -10,6 +10,15 @@ import VitContact from "../../components/UniversityPages/VITPage/VitContact";
 import VitContent from "../../components/UniversityPages/VITPage/VitContent";
 import VitFaq from "../../components/UniversityPages/VITPage/VitFaq";
 import Script from "next/script";
+export const metadata = {
+  title: "2026 VIT Online MBA Admission for Working Professionals",
+  description:
+    "2026 VIT Online MBA Admission for Working Professionals is designed exactly for this purpose—offering academic excellence, industry relevance, and the flexibility today’s professionals need.",
+  alternates: {
+    canonical:
+      "https://onlinembaadmission.co.in/2026-vit-online-mba-admission-for-working-professionals",
+  },
+};
 
 export default function VitPage() {
   return (
