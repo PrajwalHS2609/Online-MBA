@@ -55,7 +55,7 @@ const TopUniversitiesCard = () => {
       title: "Manipal University",
       reviews: "2,230+",
       rating: "4.5",
-      opted: "24,500+_",
+      opted: "24,500+",
       fees: "₹1,75,000",
       link: "/",
     },
@@ -95,7 +95,7 @@ const TopUniversitiesCard = () => {
 
                 <div className="uni-stat">
                   <span className="stat-icon">📌</span>
-                  <span className="stat-label">admission:</span>
+                  <span className="stat-label">Admission:</span>
                   <span className="stat-value">{x.opted}</span>
                   <span className="stat-extra"></span>
                 </div>

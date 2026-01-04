@@ -94,7 +94,7 @@ const OnlineMbaUniversities = () => {
 
                 <div className="uni-stat">
                   <span className="stat-icon">📌</span>
-                  <span className="stat-label">admission:</span>
+                  <span className="stat-label">Admission:</span>
                   <span className="stat-value">{x.opted}</span>
                   <span className="stat-extra"></span>
                 </div>
