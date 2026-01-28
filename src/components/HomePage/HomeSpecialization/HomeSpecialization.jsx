@@ -39,7 +39,7 @@ const HomeSpecialization = () => {
     {
       id: 1,
       img: generalManagement,
-      link: "/",
+      link: "/online-mba-course-in-general-management",
       serviceName: "MBA",
       para: "( General Management )",
     },
@@ -47,23 +47,21 @@ const HomeSpecialization = () => {
       id: 2,
       img: finance,
 
-      link: "/",
+      link: "/online-mba-course-in-finance",
       serviceName: "MBA",
       para: "( Finance )",
     },
     {
       id: 3,
       img: marketing,
-
-      link: "/",
+      link: "/online-mba-course-in-marketing",
       serviceName: "MBA",
       para: "( Marketing )",
     },
     {
       id: 4,
       img: hrManagement,
-
-      link: "/",
+      link: "/online-mba-course-in-hr-management",
       serviceName: "MBA",
       para: "( HR Management )",
     },
@@ -71,7 +69,7 @@ const HomeSpecialization = () => {
       id: 5,
       img: operation,
 
-      link: "/",
+      link: "/online-mba-course-in-business-operation",
       serviceName: "MBA",
       para: "( Operation )",
     },
@@ -79,7 +77,7 @@ const HomeSpecialization = () => {
       id: 6,
       img: it,
 
-      link: "/",
+      link: "/online-mba-course-in-information-technology",
       serviceName: "MBA",
       para: "( Information Technology )",
     },
@@ -87,7 +85,7 @@ const HomeSpecialization = () => {
       id: 7,
       img: supplyChain,
 
-      link: "/",
+      link: "/online-mba-course-in-supply-chain-management",
       serviceName: "MBA",
       para: "( Supply Chain Management )",
     },
@@ -95,7 +93,7 @@ const HomeSpecialization = () => {
       id: 8,
       img: dataAnalytics,
 
-      link: "/",
+      link: "/online-mba-course-in-data-analytics",
       serviceName: "MBA",
       para: "( Data Analytics )",
     },
@@ -103,7 +101,7 @@ const HomeSpecialization = () => {
       id: 9,
       img: businessAnalytics,
 
-      link: "/",
+      link: "/online-mba-course-in-business-analytics",
       serviceName: "MBA",
       para: "( Business Analytics )",
     },
@@ -112,7 +110,7 @@ const HomeSpecialization = () => {
       id: 10,
       img: hospitalityManagement,
 
-      link: "/",
+      link: "/online-mba-course-in-hospitality-management",
       serviceName: "MBA",
       para: "( Hospitality Management )",
     },
@@ -120,7 +118,7 @@ const HomeSpecialization = () => {
       id: 11,
       img: intBusiness,
 
-      link: "/",
+      link: "/online-mba-course-in-international-business",
       serviceName: "MBA",
       para: "( International Business )",
     },
@@ -128,7 +126,7 @@ const HomeSpecialization = () => {
       id: 12,
       img: projectManagement,
 
-      link: "/",
+      link: "/online-mba-course-in-project-management",
       serviceName: "MBA",
       para: "( Project Management )",
     },
@@ -136,7 +134,7 @@ const HomeSpecialization = () => {
       id: 13,
       img: logistic,
 
-      link: "/",
+      link: "/online-mba-course-in-logistics-and-supply-chain",
       serviceName: "MBA",
       para: "( Logistic and Supply Chain )",
     },
@@ -144,7 +142,7 @@ const HomeSpecialization = () => {
       id: 14,
       img: intFinance,
 
-      link: "/",
+      link: "/online-mba-course-in-international-finance",
       serviceName: "MBA",
       para: "( International Finance )",
     },
@@ -152,7 +150,7 @@ const HomeSpecialization = () => {
       id: 15,
       img: retailManagement,
 
-      link: "/",
+      link: "/online-mba-course-in-retail-management",
       serviceName: "MBA",
       para: "( Retail Management  )",
     },
@@ -160,7 +158,7 @@ const HomeSpecialization = () => {
       id: 16,
       img: iTFitech,
 
-      link: "/",
+      link: "/online-mba-course-in-it-and-fintech",
       serviceName: "MBA",
       para: "( IT and Fintech )",
     },
@@ -168,7 +166,7 @@ const HomeSpecialization = () => {
       id: 17,
       img: fitechManagement,
 
-      link: "/",
+      link: "/online-mba-course-in-fintech-management",
       serviceName: "MBA",
       para: "( Fintech Management )",
     },
@@ -176,7 +174,7 @@ const HomeSpecialization = () => {
       id: 18,
       img: dataScience,
 
-      link: "/",
+      link: "/online-mba-course-in-data-science-and-analytics",
       serviceName: "MBA",
       para: "( Data Science and Analytics )",
     },
@@ -184,7 +182,7 @@ const HomeSpecialization = () => {
       id: 19,
       img: healthCare,
 
-      link: "/",
+      link: "/online-mba-course-in-healthcare-management",
       serviceName: "MBA",
       para: "( Healthcare and Hospital )",
     },
@@ -192,7 +190,7 @@ const HomeSpecialization = () => {
       id: 20,
       img: banking,
 
-      link: "/",
+      link: "/online-mba-course-in-banking-and-finance",
       serviceName: "MBA",
       para: "( Banking and Finance )",
     },
@@ -200,7 +198,7 @@ const HomeSpecialization = () => {
       id: 21,
       img: marketingHmr,
 
-      link: "/",
+      link: "/online-mba-course-in-marketing-and-hrm",
       serviceName: "MBA",
       para: "( Marketing and HRM )",
     },
