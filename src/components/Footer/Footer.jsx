@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./Footer.css";
 import FooterBio from "./FooterBio";
@@ -24,14 +24,19 @@ const Footer = () => {
       <div className="belowFooter">
         <li>Copyright © 2026 R18Education</li>
         <li onClick={handleScrollTop}>
-          <FaArrowUp className="belowFooterIco"/>
+          <FaArrowUp className="belowFooterIco" />
         </li>
+      <p className="unwanted-container">
+        <Link href="/other-services">Other Services</Link>
+        <a href="/sitemap.xml">sitemap</a>
+      </p>
         <li>
           <Link href={"/privacy-policy"}>Privacy Policy</Link> |{" "}
           <Link href={"/refund-policy"}>Refund Policy</Link> |{" "}
           <Link href={"/terms-of-services"}>Terms of Services</Link>
         </li>
       </div>{" "}
+
     </div>
   );
 };
