@@ -26,17 +26,16 @@ const Footer = () => {
         <li onClick={handleScrollTop}>
           <FaArrowUp className="belowFooterIco" />
         </li>
-      <p className="unwanted-container">
-        <Link href="/other-services">Other Services</Link>
-        <a href="/sitemap.xml">sitemap</a>
-      </p>
+        <p className="unwanted-container">
+          <Link href="/other-services">Other Services</Link>
+        </p>
         <li>
           <Link href={"/privacy-policy"}>Privacy Policy</Link> |{" "}
           <Link href={"/refund-policy"}>Refund Policy</Link> |{" "}
-          <Link href={"/terms-of-services"}>Terms of Services</Link>
+          <Link href={"/terms-of-services"}>Terms of Services</Link>|{" "}
+          <a href="/sitemap.xml">Sitemap</a>
         </li>
       </div>{" "}
-
     </div>
   );
 };
