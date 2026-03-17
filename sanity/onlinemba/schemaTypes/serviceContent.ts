@@ -38,7 +38,11 @@ export default defineType({
       title: 'Body2',
       type: 'blockContent',
     }),
-
+    defineField({
+      name: 'seoKeywords',
+      title: 'SEO Keywords',
+      type: 'seoKeywords',
+    }),
     // ✅ Custom Table Field
     defineField({
       name: 'customTable',
@@ -121,6 +125,5 @@ export default defineType({
         },
       ],
     }),
-    
   ],
 })

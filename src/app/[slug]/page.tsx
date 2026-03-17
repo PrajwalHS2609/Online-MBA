@@ -37,6 +37,9 @@ const SERVICE_QUERY = `{
     _id, title, slug,metaTitle ,metaDescription,body1, body2,
     mainImage{ asset->{url} },
     youtubeVideoUrl,
+        seoKeywords{
+  keywords
+},
     faq[]{ question, answer },
    tableOfContent[]{
       title
@@ -186,7 +189,7 @@ export default async function SlugPage({
 
   if (postData.post) {
     return (
-          <div className="blog-container">
+      <div className="blog-container">
         <PostContent
           content={{
             ...postData.post,
