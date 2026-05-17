@@ -6,7 +6,7 @@ const UniversitiesFees = () => {
   const universities = [
     { name: "Amity University", fee: "₹1,99,000" },
     { name: "NMIMS University", fee: "₹2,20,000" },
-    { name: "Manipal University Jaipur", fee: "₹1,75,000" },
+    { name: "Manipal University", fee: "₹1,75,000" },
     { name: "Sikkim Manipal University", fee: "₹1,10,000" },
     { name: "Vellore Institute of Technology", fee: "₹1,80,000" },
   ];
